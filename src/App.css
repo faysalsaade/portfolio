@@ -47,26 +47,12 @@
 }
 .h4 {
   font-family: inherit;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   margin-bottom: 18px;
   color: #363532;
+  font-weight: bold;
 }
-@media screen and (min-width: 767px) {
-  .options {
-    display: flex;
-  }
-  .firstpage {
-    width: 400px;
-  }
-  .h4 {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (max-width: 767px) {
-  .h4 {
-    font-size: 2.2rem;
-  }
-}
+
 .text {
   color: #fcf7f1;
   display: flex;
@@ -107,15 +93,67 @@
   margin-top: 20px;
   margin-right: 10px;
 }
-.parent {
-  display: flex;
-}
+
 .firstpage {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   margin: auto;
   margin-top: 20px;
   max-width: 1000px;
   width: 50vw;
+}
+.hamb {
+  color: black;
+  display: none;
+}
+@media screen and (min-width: 1036px) {
+  .imgNav {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .options {
+    display: flex;
+  }
+}
+@media screen and (max-width: 769px) {
+  .h4 {
+    font-size: 2.2rem;
+  }
+  .hamb {
+    display: block;
+    color: black;
+    font-size: 35px;
+    margin-top: 5px;
+  }
+  .passionate {
+    display: none;
+  }
+  .firstpage {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .pPas {
+    padding-left: 0;
+  }
+  .h4 {
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  .text {
+    padding-top: 0;
+    margin-left: 10px;
+  }
+  .imgPer {
+    font-size: 20px;
+    margin-top: 0;
+    width: 100px;
+    margin-left: 120px;
+  }
+  .nav {
+    margin-left: 0;
+  }
+  .imgNav {
+    margin-left: 10px;
+  }
 }
