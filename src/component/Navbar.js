@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  function toogle() {
+    open === true ? setOpen(false) : setOpen(true);
+  }
   return (
     <>
       <div className="mainNav">
@@ -22,16 +25,18 @@ const Navbar = () => {
             <li>Contact</li>
           </ul>
         </div>
-        <GiHamburgerMenu className="hamb" onClick={() => {}} />
+        <GiHamburgerMenu className="hamb" onClick={() => toogle()} />
       </div>
-      <aside className="aside">
-        <ul className="asideUl">
-          <li>Works</li>
-          <li>Posts</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </aside>
+      {open === true ? (
+        <aside className="aside">
+          <ul className="asideUl">
+            <li>Works</li>
+            <li>Posts</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </aside>
+      ) : null}
     </>
   );
 };

@@ -1,8 +1,7 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./component/Navbar.css";
 
 import Hero from "./hero";
-import Navbar from "./componenet/Navbar";
+import Navbar from "./component/Navbar";
 
 function App() {
   return (
