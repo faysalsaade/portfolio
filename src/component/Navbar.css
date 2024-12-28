@@ -36,6 +36,7 @@
 .mainNav {
   display: flex;
   color: #fdfaf7;
+  margin-bottom: 80px;
 }
 .options ul li {
   color: #252422;
@@ -130,7 +131,7 @@
 }
 @media screen and (max-width: 640px) {
   .name {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 300px) {

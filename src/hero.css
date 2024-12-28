@@ -1,6 +1,6 @@
 .h4 {
   font-family: inherit;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 18px;
   color: #363532;
   font-weight: bold;
@@ -19,7 +19,7 @@
   background-color: #eb5e28;
   color: #fff;
   font-family: inherit;
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 700;
   left: 0;
   letter-spacing: 0.1rem;
@@ -35,10 +35,10 @@
 }
 .software {
   font-family: inherit;
-  font-size: 30px;
+  font-size: 27px;
   color: #333230;
-  margin-left: 60px;
-  width: 155px;
+  margin-left: 32px;
+  width: 260px;
   display: block;
 }
 .imgPer {
@@ -91,17 +91,27 @@
 }
 @media screen and (max-width: 950px) {
   .software {
-    width: 156px;
+    margin-bottom: 20px;
   }
 }
 .App {
   max-width: 1500px;
   margin: auto;
 }
-
+@media screen and (min-width: 1115px) {
+  .software {
+    width: 256px;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .software {
+    width: 156px;
+  }
+}
 @media screen and (max-width: 640px) {
   .h4 {
     font-size: 22px;
+    margin-left: 150px;
   }
 }
 @media screen and (max-width: 630px) {
@@ -135,7 +145,11 @@
     font-weight: bold;
   }
 }
-
+/* @media screen and (max-width: 758px) {
+  .telepaty {
+    margin-left: 33px;
+  }
+} */
 .telepaty {
   font-size: 20px;
   color: #403d39;
@@ -161,17 +175,17 @@
 @media screen and (max-width: 750px) {
   .telepaty {
     font-size: 15px;
-    margin-left: 200px;
+    margin-left: 140px;
   }
   .description p {
     font-size: 15px;
-    width: 300px;
-    margin-left: 200px;
+    width: 290px;
+    margin-left: 140px;
   }
 }
 @media screen and (min-width: 760px) {
   .description p {
-    margin-left: 275px;
+    margin-left: 190px;
     font-size: 18px;
     width: 550px;
   }
@@ -188,21 +202,33 @@
   }
   .telepaty {
     margin-left: 2%;
-    width: 352px;
+    width: 333px;
     margin-top: 20px;
   }
   .software {
     font-size: 25px;
-    width: 300px;
+    width: 285px;
   }
 }
-@media screen and (max-width: 380px) {
-  .telepaty {
-    font-size: 18px;
-    width: 270px;
-  }
-  .description p {
-    font-size: 18px;
+
+@media screen and (max-width: 750px) {
+  .software {
     width: 260px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .description p {
+    margin-left: 270px;
+  }
+}
+
+@media screen and (min-width: 1230px) {
+  .description p {
+    margin-left: 340px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .telepaty {
+    width: 90%;
   }
 }
