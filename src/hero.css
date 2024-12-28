@@ -11,10 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
   max-width: 1000px;
-  padding-top: 13vh;
-  width: 50vw;
+  width: 35vw;
+  margin-left: 0px;
 }
 .passionate {
   background-color: #eb5e28;
@@ -31,19 +30,21 @@
   z-index: -9;
 }
 .pPas {
-  padding-left: 11rem;
+  padding-left: 9rem;
   position: relative;
 }
 .software {
   font-family: inherit;
-  font-size: 21px;
+  font-size: 30px;
   color: #333230;
+  margin-left: 60px;
+  width: 155px;
+  display: block;
 }
 .imgPer {
   border-radius: 999rem;
   z-index: -9;
   width: 220px;
-  margin-top: 20px;
   margin-left: 0px;
 }
 
@@ -56,35 +57,6 @@
   width: 50vw;
 }
 
-@media screen and (max-width: 750px) {
-  .firstpage {
-    flex-direction: column-reverse;
-    margin: 0;
-  }
-  .passionate {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .h4 {
-    font-size: 17px;
-  }
-  .software {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 300px) {
-  .h4 {
-    font-size: 12px;
-  }
-  .software {
-    font-size: 13px;
-  }
-  .imgPer {
-    margin-left: 30px;
-  }
-}
 @media screen and (max-width: 794px) {
   .imgPer {
     width: 200px;
@@ -96,7 +68,7 @@
     font-size: 32px;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 751px) {
   .imgPer {
     width: 100px;
     margin-left: 300px;
@@ -106,11 +78,131 @@
   }
   .h4 {
     margin-left: 200px;
-    font-size: 20px;
+    font-size: 26px;
+    width: 215px;
+  }
+  .firstpage {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  .passionate {
+    display: none;
   }
 }
-
+@media screen and (max-width: 950px) {
+  .software {
+    width: 156px;
+  }
+}
 .App {
   max-width: 1500px;
   margin: auto;
+}
+
+@media screen and (max-width: 640px) {
+  .h4 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .imgPer {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .imgPer {
+    margin-left: 120px;
+  }
+  .h4 {
+    margin-left: 10px;
+  }
+  .software {
+    margin-left: 10px;
+  }
+  .pPas {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 250px) {
+  .imgPer {
+    margin-left: 0px;
+  }
+  .h4 {
+    font-size: 12px;
+  }
+  .software {
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+
+.telepaty {
+  font-size: 20px;
+  color: #403d39;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.telepaty a {
+  color: #eb5e28;
+  text-decoration: none;
+}
+.description {
+  line-height: 30px;
+}
+.description p {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: #403d39;
+  margin: auto;
+  width: 670px;
+}
+@media screen and (max-width: 750px) {
+  .telepaty {
+    font-size: 15px;
+    margin-left: 200px;
+  }
+  .description p {
+    font-size: 15px;
+    width: 300px;
+    margin-left: 200px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .description p {
+    margin-left: 275px;
+    font-size: 18px;
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description p {
+    font-size: 1.2rem;
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .description p {
+    margin-left: 2%;
+  }
+  .telepaty {
+    margin-left: 2%;
+    width: 352px;
+    margin-top: 20px;
+  }
+  .software {
+    font-size: 25px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .telepaty {
+    font-size: 18px;
+    width: 270px;
+  }
+  .description p {
+    font-size: 18px;
+    width: 260px;
+  }
 }
