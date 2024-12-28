@@ -20,6 +20,7 @@
   font-size: 1.8rem;
   font-weight: 550;
   text-decoration: none;
+  cursor: pointer;
 }
 .options ul {
   align-items: center;
@@ -51,10 +52,10 @@
 }
 @media screen and (max-width: 1080px) {
   .nav {
-    margin-left: 20px;
+    margin-left: 10px;
   }
   .options ul {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 799px) {
@@ -63,11 +64,22 @@
   }
 }
 @media screen and (max-width: 799px) {
+  .hamb {
+    display: block;
+    color: black;
+    font-size: 35px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 799px) {
   .nav {
     margin-left: 0;
   }
   .imgNav {
     margin-left: 10px;
+  }
+  .options {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
