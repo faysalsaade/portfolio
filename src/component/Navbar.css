@@ -143,3 +143,11 @@
     margin-right: 4px;
   }
 }
+@media screen and (max-width: 799px) {
+  .mainNav {
+    margin-bottom: 20px;
+  }
+  .aside {
+    width: 55%;
+  }
+}

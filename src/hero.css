@@ -213,12 +213,14 @@
 
 @media screen and (max-width: 750px) {
   .software {
-    width: 260px;
+    width: 233px;
   }
 }
 @media screen and (min-width: 830px) {
   .description p {
-    margin-left: 270px;
+    width: 50%;
+    margin-left: auto;
+    font-size: 20px;
   }
 }
 
@@ -229,6 +231,19 @@
 }
 @media screen and (max-width: 760px) {
   .telepaty {
-    width: 90%;
+    width: 49%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .telepaty {
+    width: 89%;
+    margin-right: 0;
+  }
+  .description p {
+    width: 220px;
+    margin-right: 0;
+  }
+  .imgPer {
+    margin-left: 80px;
   }
 }
