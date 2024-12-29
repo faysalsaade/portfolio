@@ -1,0 +1,185 @@
+.Achievements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.things::before {
+  content: "d";
+  background-color: #eb5e28;
+  color: #eb5e28;
+  font-weight: bold;
+  margin-right: 15px;
+}
+.things {
+  margin-left: -430px;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+.apps {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.Img {
+  height: 100%;
+  object-fit: cover;
+  width: 450px;
+}
+
+@media screen and (max-width: 799px) {
+  .Img {
+    width: 300px;
+  }
+  .things {
+    margin-left: -50px;
+  }
+}
+@media screen and (max-width: 299px) {
+  .things {
+    font-size: 16px;
+  }
+  .Img {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .Img {
+    width: 240px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .things {
+    margin-left: -200px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .things {
+    margin-left: -240px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .things {
+    margin-left: -430px;
+  }
+}
+.liOfAch {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 31%;
+}
+.liOfAch li {
+  list-style: none;
+  background-color: #e6dfd3;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 5px;
+  padding: 4px 8px;
+  color: #78736c;
+}
+.text {
+  margin-left: 215px;
+  width: 41%;
+  font-size: 20px;
+  margin-top: 5px;
+  color: #3e3d3c;
+  line-height: 30px;
+}
+@media screen and (max-width: 1150px) {
+  .liOfAch {
+    margin-right: 15%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .liOfAch li {
+    font-size: 0.6rem;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .text {
+    font-size: 15px;
+    width: 290px;
+    margin-left: 140px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .text {
+    margin-left: 190px;
+    font-size: 18px;
+    width: 550px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text {
+    font-size: 1.2rem;
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .text {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .software {
+    width: 233px;
+  }
+}
+@media screen and (min-width: 830px) {
+  .text {
+    width: 50%;
+    margin-left: 230px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .text {
+    margin-left: 340px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .text {
+    margin-left: 260px;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .text {
+    margin-left: 340px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .text {
+    width: 89%;
+    margin-right: 0;
+  }
+}
+.firA {
+  color: #000;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 400;
+  position: relative;
+  text-decoration: none;
+  margin-left: 350px;
+}
+.secA {
+  margin-left: 30px;
+}
+.allA {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

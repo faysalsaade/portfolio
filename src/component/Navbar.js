@@ -5,6 +5,7 @@ const Navbar = () => {
   function toogle() {
     open === true ? setOpen(false) : setOpen(true);
   }
+
   return (
     <>
       <div className="mainNav">
@@ -25,7 +26,7 @@ const Navbar = () => {
             <li>Contact</li>
           </ul>
         </div>
-        <GiHamburgerMenu className="hamb" onClick={() => toogle()} />
+        <GiHamburgerMenu className="hamb" onClick={toogle} />
       </div>
       {open === true ? (
         <aside className="aside">
