@@ -54,7 +54,7 @@ body {
   display: flex;
   height: 9vh;
   position: fixed;
-  width: 100%;
+
   z-index: 400;
   top: 0px;
 }
@@ -104,9 +104,14 @@ body {
   .nav {
     margin-left: 10px;
   }
+}
+@media screen and (max-width: 1100px) {
   .options ul {
     margin-right: 20px;
   }
+}
+.options ul {
+  margin-right: 20px;
 }
 @media screen and (min-width: 799px) {
   .options {
@@ -297,3 +302,8 @@ body {
     margin-top: 4px;
   }
 }
+/* @media screen and (min-width: 1080px) {
+  .nav {
+    margin-right: 100px;
+  }
+} */
