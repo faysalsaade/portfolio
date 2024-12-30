@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixedNav">
+      <div className="fixedNav" id="about">
         <div className="mainNav">
           <div className="nav">
             <img

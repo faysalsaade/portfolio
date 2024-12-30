@@ -111,7 +111,7 @@ body {
 @media screen and (min-width: 799px) {
   .options {
     display: flex;
-    margin-top: 21px;
+    margin-top: 6px;
   }
 }
 
@@ -147,7 +147,7 @@ body {
     display: block;
     color: black;
     font-size: 35px;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-left: 170px;
   }
 }
@@ -185,7 +185,7 @@ body {
   }
   .hamb {
     font-size: 30px;
-    margin-top: 15px;
+    margin-top: 0px;
     margin-right: 15px;
   }
 }
@@ -232,7 +232,7 @@ body {
 @media screen and (max-width: 1099px) {
   .nav {
     width: 550px;
-    margin-top: 32px;
+    margin-top: 15px;
   }
   .mainNav {
     margin-top: 14px;
@@ -241,7 +241,8 @@ body {
 
 @media screen and (max-width: 485px) {
   .hamb {
-    margin-right: 80px;
+    margin-right: 70px;
+    margin-left: 80px;
   }
   .nav {
     margin-right: -300px;
@@ -253,11 +254,39 @@ body {
   }
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 460px) {
   .name {
     font-size: 15px;
   }
   .nav {
     margin-right: -400px;
+  }
+  .hamb {
+    margin-left: 160px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .hamb {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .hamb {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .hamb {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hamb {
+    margin-left: 40px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hamb {
+    margin-left: 30px;
   }
 }
