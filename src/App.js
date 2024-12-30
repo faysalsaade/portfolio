@@ -5,7 +5,7 @@ import Achievements from "./component/Achievements";
 
 function App() {
   return (
-    <div className="App">
+    <div id="about" className="App">
       <Navbar />
       <Hero />
       <Achievements />
