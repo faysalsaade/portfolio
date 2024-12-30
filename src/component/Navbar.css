@@ -148,7 +148,7 @@ body {
     color: black;
     font-size: 35px;
     margin-top: 0px;
-    margin-left: 170px;
+    margin-left: 230px;
   }
 }
 @media screen and (max-width: 799px) {
@@ -238,19 +238,19 @@ body {
     margin-top: 14px;
   }
 }
+@media screen and (max-width: 720px) {
+  .hamb {
+    margin-left: 40px;
+  }
+}
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 520px) {
   .hamb {
     margin-right: 70px;
     margin-left: 80px;
   }
   .nav {
     margin-right: -300px;
-  }
-}
-@media screen and (max-width: 369px) {
-  .nav {
-    margin-right: -320px;
   }
 }
 
@@ -272,21 +272,28 @@ body {
 }
 @media screen and (max-width: 370px) {
   .hamb {
-    margin-left: 70px;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 369px) {
+  .nav {
+    margin-right: -320px;
   }
 }
 @media screen and (max-width: 340px) {
   .hamb {
-    margin-left: 50px;
+    margin-left: -45px;
   }
 }
 @media screen and (max-width: 320px) {
   .hamb {
-    margin-left: 40px;
+    margin-left: -50px;
   }
 }
 @media screen and (max-width: 300px) {
   .hamb {
-    margin-left: 30px;
+    margin-left: -70px;
+    font-size: 25px;
+    margin-top: 4px;
   }
 }
