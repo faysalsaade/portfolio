@@ -96,6 +96,11 @@
   color: #3e3d3c;
   line-height: 30px;
 }
+@media screen and (min-width: 1110px) {
+  .liOfAch {
+    margin-right: 28%;
+  }
+}
 @media screen and (max-width: 1150px) {
   .liOfAch {
     margin-right: 15%;
@@ -107,16 +112,16 @@
     margin-right: 0;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 759px) {
   .text {
     font-size: 15px;
     width: 290px;
-    margin-left: 140px;
+    margin-left: 13px;
   }
 }
 @media screen and (min-width: 760px) {
   .text {
-    margin-left: 190px;
+    margin-left: 170px;
     font-size: 18px;
     width: 550px;
   }
@@ -138,26 +143,22 @@
     width: 233px;
   }
 }
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 1000px) {
   .text {
     width: 50%;
-    margin-left: 230px;
+    margin-left: 0px;
     font-size: 20px;
   }
 }
-@media screen and (min-width: 1230px) {
-  .text {
-    margin-left: 340px;
-  }
-}
+
 @media screen and (min-width: 990px) {
   .text {
-    margin-left: 260px;
+    margin-left: 270px;
   }
 }
 @media screen and (min-width: 1230px) {
   .text {
-    margin-left: 340px;
+    margin-left: 350px;
   }
 }
 

@@ -9,9 +9,9 @@ body {
 .nav {
   align-items: center;
   display: flex;
-  max-width: 1000px;
+  max-width: 1200px;
   width: 90vw;
-  margin-left: 150px;
+  margin-left: 130px;
   margin-top: 12px;
 }
 .imgNav {
@@ -24,6 +24,7 @@ body {
   font-weight: 550;
   text-decoration: none;
   cursor: pointer;
+  margin-right: 0;
 }
 .options ul {
   align-items: center;
@@ -33,19 +34,40 @@ body {
   list-style: none;
   font-size: 23px;
   margin-top: 8px;
-  margin-right: 170px;
+  margin-right: 10px;
 }
 
 .mainNav {
   display: flex;
   color: #fdfaf7;
   margin-bottom: 70px;
-}
-.options ul li {
-  color: #252422;
-  cursor: pointer;
+  gap: 70px;
 }
 
+.fixedNav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: normal;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: hsla(0, 0%, 100%, 0.4);
+  display: flex;
+  height: 9vh;
+  position: fixed;
+  width: 100%;
+  z-index: 400;
+  top: 0px;
+}
+.options ul a {
+  color: #252422;
+  cursor: pointer;
+  text-decoration: none;
+}
+.options ul li a:hover {
+  color: red;
+  transition-duration: 10.1s;
+}
 .options {
   display: none;
 }
@@ -75,6 +97,10 @@ body {
   margin-top: 150px;
   cursor: pointer;
 }
+.asideUl li a {
+  color: #252422;
+  text-decoration: none;
+}
 @media screen and (max-width: 1080px) {
   .nav {
     margin-left: 10px;
@@ -86,13 +112,10 @@ body {
 @media screen and (min-width: 799px) {
   .options {
     display: flex;
+    margin-top: 21px;
   }
 }
-@media screen and (min-width: 799px) {
-  .options {
-    display: flex;
-  }
-}
+
 @media screen and (max-width: 799px) {
   .hamb {
     display: block;
@@ -125,7 +148,8 @@ body {
     display: block;
     color: black;
     font-size: 35px;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-left: 170px;
   }
 }
 @media screen and (max-width: 799px) {
@@ -154,7 +178,7 @@ body {
   }
   .hamb {
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: 15px;
   }
 }
@@ -179,5 +203,36 @@ body {
   }
   .name {
     font-size: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .aside {
+    display: none;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .nav {
+    margin-right: -510px;
+    margin-top: 30px;
+  }
+  .options {
+    margin-top: 20px;
+    margin-right: 120px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .nav {
+    margin-right: -200px;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 1099px) {
+  .nav {
+    width: 550px;
+    margin-top: 32px;
+  }
+  .mainNav {
+    margin-top: 14px;
   }
 }

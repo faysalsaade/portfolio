@@ -4,6 +4,7 @@
   margin-bottom: 18px;
   color: #363532;
   font-weight: bold;
+  width: 300px;
 }
 
 .text {
@@ -51,8 +52,8 @@
 .firstpage {
   display: flex;
   justify-content: center;
-  margin: auto;
-  margin-top: 20px;
+  margin-left: 170px;
+  margin-top: 100px;
   max-width: 1000px;
   width: 50vw;
 }
@@ -72,12 +73,13 @@
   .imgPer {
     width: 100px;
     margin-left: 300px;
+    margin-top: 100px;
   }
   .text {
     padding: 0;
   }
   .h4 {
-    margin-left: 200px;
+    margin-left: 175px;
     font-size: 26px;
     width: 215px;
   }
@@ -106,12 +108,13 @@
 @media screen and (max-width: 1115px) {
   .software {
     width: 156px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 640px) {
   .h4 {
     font-size: 22px;
-    margin-left: 150px;
+    margin-left: 175px;
   }
 }
 @media screen and (max-width: 630px) {
@@ -145,11 +148,7 @@
     font-weight: bold;
   }
 }
-/* @media screen and (max-width: 758px) {
-  .telepaty {
-    margin-left: 33px;
-  }
-} */
+
 .telepaty {
   font-size: 20px;
   color: #403d39;
@@ -170,7 +169,7 @@
   font-size: 1.2rem;
   color: #403d39;
   margin: auto;
-  width: 300px;
+  width: 360px;
 }
 @media screen and (max-width: 750px) {
   .telepaty {
@@ -198,10 +197,10 @@
 }
 @media screen and (max-width: 490px) {
   .description p {
-    margin-left: 8%;
+    margin-left: 6%;
   }
   .telepaty {
-    margin-left: 2%;
+    margin-left: 6%;
     width: 333px;
     margin-top: 20px;
   }
@@ -245,5 +244,10 @@
   }
   .imgPer {
     margin-left: 80px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .imgPer {
+    margin-left: 100px;
   }
 }
