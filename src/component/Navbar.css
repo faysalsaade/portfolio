@@ -54,9 +54,14 @@ body {
   display: flex;
   height: 9vh;
   position: fixed;
-
+  width: 90%;
   z-index: 400;
   top: 0px;
+}
+@media screen and(min-width:1500px) {
+  .fixedNav {
+    width: 0%;
+  }
 }
 .options ul a {
   color: #252422;
@@ -152,8 +157,6 @@ body {
     display: block;
     color: black;
     font-size: 35px;
-    margin-top: 0px;
-    margin-left: 230px;
   }
 }
 @media screen and (max-width: 799px) {
@@ -228,6 +231,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1100px) {
+  .options {
+    margin-top: 20px;
+    margin-right: 120px;
+  }
+}
 @media screen and (max-width: 1050px) {
   .nav {
     margin-right: -200px;
@@ -243,12 +252,12 @@ body {
     margin-top: 14px;
   }
 }
-@media screen and (max-width: 720px) {
+
+@media screen and (min-width: 660px) {
   .hamb {
-    margin-left: 40px;
+    margin-left: 170px;
   }
 }
-
 @media screen and (max-width: 520px) {
   .hamb {
     margin-right: 70px;

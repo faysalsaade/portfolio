@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { links } from "../constants.js";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const asideRef = useRef(null);
@@ -37,18 +37,17 @@ const Navbar = () => {
           {/* second part */}
           <div className="options">
             <ul>
-              <li>
-                <a href="#works">Works</a>
-              </li>
-              <li>
-                <a href="#posts">Posts</a>
-              </li>
-              <li>
-                <a href="#about">About</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
+              {links.map((link) => (
+                <>
+                  <li
+                    style={{
+                      textTransform: "capitalize",
+                    }}
+                  >
+                    <a href={`#${link}`}>{link}</a>
+                  </li>
+                </>
+              ))}
             </ul>
           </div>
 
