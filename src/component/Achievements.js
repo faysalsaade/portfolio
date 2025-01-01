@@ -3,7 +3,7 @@ import "./Achievements.css";
 import { data } from "../constants.js";
 const Achievements = () => {
   return (
-    <div id="works">
+    <div id="works" className="-z-10 relative">
       {data.map((ele) => (
         <>
           <div className="Achievements">

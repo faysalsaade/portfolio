@@ -23,23 +23,55 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="fixedNav" id="about">
-        <div className="mainNav">
-          <div className="nav">
-            <img
-              src="https://www.howiework.com/static/media/logo.73fe7a7a.png"
-              className="imgNav"
-              alt="logo"
-            />
-            <p className="name">Mahmoud Haddara</p>
-          </div>
+      <div
+        id="about"
+        className="flex justify-around items-center top-0 fixed w-full backdrop-blur h-16"
+      >
+        <div className="flex items-center">
+          <img
+            // src="https://www.howiework.com/static/media/logo.73fe7a7a.png"
+            src="images/logo192.png"
+            className="w-12"
+            alt="logo"
+          />
+          <p className="text-3xl font-medium">Mahmoud Haddara</p>
+        </div>
 
-          {/* second part */}
-          <div className="options">
+        {/* second part */}
+        <div>
+          <ul className="  items-center gap-10 md:flex hidden font-medium">
+            {links.map((link) => (
+              <>
+                <li
+                  className="text-2xl"
+                  style={{
+                    textTransform: "capitalize",
+                  }}
+                >
+                  <a href={`#${link}`}>{link}</a>
+                </li>
+              </>
+            ))}
+          </ul>
+        </div>
+
+        <GiHamburgerMenu
+          className=" cursor-pointer md:hidden text-4xl "
+          onClick={toggle}
+        />
+
+        {open && (
+          <aside
+            className="w-2/3 h-screen z-50  top-16 left-0
+             bg-red-500 md:hidden fixed
+              flex flex-col items-center justify-center"
+            ref={asideRef}
+          >
             <ul>
               {links.map((link) => (
                 <>
                   <li
+                    className="text-2xl py-6"
                     style={{
                       textTransform: "capitalize",
                     }}
@@ -49,30 +81,9 @@ const Navbar = () => {
                 </>
               ))}
             </ul>
-          </div>
-
-          <GiHamburgerMenu className="hamb" onClick={toggle} />
-        </div>
+          </aside>
+        )}
       </div>
-
-      {open && (
-        <aside ref={asideRef} className="aside">
-          <ul className="asideUl">
-            <li>
-              <a href="#works">Works</a>
-            </li>
-            <li>
-              <a href="#posts">Posts</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </aside>
-      )}
     </>
   );
 };

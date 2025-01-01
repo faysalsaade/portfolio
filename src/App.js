@@ -1,11 +1,10 @@
-import "./component/Navbar.css";
 import Hero from "./hero";
 import Navbar from "./component/Navbar";
 import Achievements from "./component/Achievements";
 
 function App() {
   return (
-    <div id="about" className="App">
+    <div id="about">
       <Navbar />
       <Hero />
       <Achievements />

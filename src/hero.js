@@ -2,7 +2,7 @@ import React from "react";
 import "./hero.css";
 const Hero = () => {
   return (
-    <>
+    <div className="-z-10 relative">
       <div className="firstpage">
         <div className="text">
           <h4 className="h4">Hi, I'm Mahmoud</h4>
@@ -48,7 +48,7 @@ const Hero = () => {
           <br></br>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
