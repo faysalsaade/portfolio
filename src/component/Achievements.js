@@ -1,9 +1,11 @@
 import React from "react";
-import "./Achievements.css";
 import { data } from "../constants.js";
 const Achievements = () => {
   return (
-    <div id="works" className="-z-10 relative">
+    <div
+      id="works"
+      className="-z-10 relative flex items-center justify-center flex-col m-auto w-2/3"
+    >
       {data.map((ele) => (
         <>
           <div className="Achievements">

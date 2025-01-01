@@ -25,16 +25,16 @@ const Navbar = () => {
     <>
       <div
         id="about"
-        className="flex justify-around items-center top-0 fixed w-full backdrop-blur h-16"
+        className="flex justify-around items-center 
+        top-0 fixed w-full backdrop-blur h-16  "
       >
         <div className="flex items-center">
           <img
-            // src="https://www.howiework.com/static/media/logo.73fe7a7a.png"
-            src="images/logo192.png"
-            className="w-12"
+            src="https://www.howiework.com/static/media/logo.73fe7a7a.png"
+            className="sm:w-16 w-12"
             alt="logo"
           />
-          <p className="text-3xl font-medium">Mahmoud Haddara</p>
+          <p className="sm:text-3xl sm:font-medium">Mahmoud Haddara</p>
         </div>
 
         {/* second part */}
@@ -63,8 +63,8 @@ const Navbar = () => {
         {open && (
           <aside
             className="w-2/3 h-screen z-50  top-16 left-0
-             bg-red-500 md:hidden fixed
-              flex flex-col items-center justify-center"
+             bg-white md:hidden fixed
+              flex flex-col items-center justify-center shadow-2xl"
             ref={asideRef}
           >
             <ul>
