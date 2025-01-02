@@ -1,28 +1,26 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="-z-10 relative flex flex-col mx-auto  w-2/3 lg:left-28 lg:top-7 top-20">
-      <div className="flex items-center  relative top-6 sm:flex-row flex-col-reverse ">
-        <div className="">
-          <h4 className="lg:text-4xl lg:relative lg:top-4 sm:relative sm:-top-6 sm:text-2xl relative bottom-6  ">
+    <div className="-z-10 relative flex flex-col mx-auto  w-2/3 lg:left-28 lg:top-24 top-20">
+      <div className="flex items-start  relative  top-6 sm:top-14 lg:top-20 sm:flex-row flex-col-reverse ">
+        <div className="sm:right-0 relative  bottom-7 ">
+          <h4 className="lg:text-4xl lg:relative lg:top-4 sm:relative sm:-top-6 sm:text-2xl relative bottom-6 text-2xl  ">
             Hi, I'm Mahmoud
           </h4>
           <p className="relative lg:top-8">
-            <span className=" lg:text-2xl font-bold text-white bg-orange-500 px-2 tracking-widest absolute -rotate-12">
+            <span className="hidden sm:block lg:text-2xl font-bold text-white bg-orange-500 px-2 tracking-widest absolute -rotate-12">
               Passionate
             </span>
-            <span className=" w-0 block relative lg:left-44 lg:text-2xl  lg:top-0 lg:w-64 sm:w-0 sm:left-32 sm:block text-xl">
+            <span className=" -w-0 block relative lg:left-44 lg:text-2xl  lg:top-0 lg:w-64 sm:w-0 sm:left-32 sm:block text-xl">
               Software Developer
             </span>
           </p>
         </div>
-        <div>
-          <img
-            className="sm:w-52  sm: y-12 lg:-right-40 lg:relative relative left-20 w-24 left-4 "
-            src="https://omarwork-com.onrender.com/static/media/sy.5bbea357f77e8437585e.png"
-            alt="Mahmoud Haddara"
-          ></img>
-        </div>
+        <img
+          className="sm:w-52  sm: y-12 lg:-right-40 lg:relative relative  w-24 bottom-12  "
+          src="https://omarwork-com.onrender.com/static/media/sy.5bbea357f77e8437585e.png"
+          alt="Mahmoud Haddara"
+        ></img>
       </div>
       <div className="text-gray-700 flex flex-col justify-center lg:max-w-3xl lg:text-xl">
         <p>
