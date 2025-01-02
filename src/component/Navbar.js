@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
       <div
         id="about"
-        className="flex justify-around items-center 
+        className="flex justify-around items-center  z-10
         top-0 fixed w-full backdrop-blur h-16  "
       >
         <div className="flex items-center">
