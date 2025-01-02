@@ -22,7 +22,7 @@ const Hero = () => {
           alt="Mahmoud Haddara"
         ></img>
       </div>
-      <div className=" text-gray-700 flex flex-col justify-center lg:max-w-3xl lg:text-xl sm:m-auto sm:w-7/12 lg:m-0  lg:w-3/4 sm:text-xl sm:w-full">
+      <div className=" text-gray-700 flex flex-col justify-center lg:max-w-3xl lg:text-xl sm:m-auto  lg:m-0  lg:w-3/4 sm:text-xl sm:w-full">
         <p>
           {" "}
           My name is Mahmoud Haddara. Currently working at{" "}
