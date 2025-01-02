@@ -62,7 +62,7 @@ const Navbar = () => {
 
         {open && (
           <aside
-            className="w-2/3 h-screen z-50  top-16 left-0
+            className="w-2/3 h-screen z-0  top-16 left-0
              bg-white md:hidden fixed
               flex flex-col items-center justify-center shadow-2xl"
             ref={asideRef}

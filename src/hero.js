@@ -1,8 +1,8 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="-z-10 relative flex flex-col mx-auto  w-2/3 lg:left-28 lg:top-24 top-20">
-      <div className="flex items-start  relative  top-6 sm:top-14 lg:top-20 sm:flex-row flex-col-reverse ">
+    <div className="-z-10 relative flex flex-col mx-auto  w-2/3 lg:left-28 lg:top-32 top-36">
+      <div className="flex items-start  relative  sm:top-14 lg:top-20 sm:flex-row flex-col-reverse top-0 ">
         <div className="sm:right-0 relative  bottom-7 ">
           <h4 className="lg:text-4xl lg:relative lg:top-4 sm:relative sm:-top-6 sm:text-2xl relative bottom-6 text-2xl  ">
             Hi, I'm Mahmoud
@@ -17,12 +17,12 @@ const Hero = () => {
           </p>
         </div>
         <img
-          className="sm:w-52  sm: y-12 lg:-right-40 lg:relative relative  w-24 bottom-12  "
+          className="sm:w-52  sm: y-12 lg:-right-40 lg:relative relative  w-36 bottom-20 sm:left-20 m-auto sm:m-0 md:mx-7    "
           src="https://omarwork-com.onrender.com/static/media/sy.5bbea357f77e8437585e.png"
           alt="Mahmoud Haddara"
         ></img>
       </div>
-      <div className="text-gray-700 flex flex-col justify-center lg:max-w-3xl lg:text-xl">
+      <div className=" text-gray-700 flex flex-col justify-center lg:max-w-3xl lg:text-xl sm:m-auto sm:w-7/12 lg:m-0  lg:w-3/4 sm:text-xl sm:w-full">
         <p>
           {" "}
           My name is Mahmoud Haddara. Currently working at{" "}
