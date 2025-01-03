@@ -5,7 +5,7 @@ const Achievements = () => {
     <>
       <div
         id="works"
-        className="m-auto lg:items-center -z-10 relative flex items-start justify-center flex-col  w-2/3  lg:w-3/4 lg:top-36 sm:top-40 top-40"
+        className="m-auto lg:items-center  relative flex items-start justify-center flex-col  w-2/3  lg:w-3/4 lg:top-36 sm:top-40 top-40"
       >
         <div className="flex flex-col items-start w-full lg:w-2/3">
           <div className="flex relative left-3">
@@ -18,7 +18,7 @@ const Achievements = () => {
         {data.map((ele) => (
           <>
             <div className="mx-auto flex flex-col lg:items-center my-8">
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-start lg:justify-center w-3/6 mx-auto">
                 <p className="my-6  sm:text-xl font-bold text-base ">
                   {ele.title}
                 </p>
@@ -28,10 +28,10 @@ const Achievements = () => {
                 src={ele.img}
                 alt="github"
               />
-              <div className="flex flex-col text-xl gap-5  w-5/6 sm:w-2/3 relative top-5 items-start ">
-                <ul className="flex items-start justify-around w6">
+              <div className="flex flex-col sm:text-xl sm:gap-5  w-5/6 sm:w-2/3 relative top-5 items-start ">
+                <ul className="flex items-start justify-around w-6 my-4">
                   {ele.tags.map((lang) => (
-                    <li className=" rounded text-xs px-3 py-1 mx-1 bg-[#E6DFD3] text-[#716D69]">
+                    <li className=" rounded  p-1 text-[9.6px] sm:text-xs sm:px-3 sm:py-1 mx-1 bg-[#E6DFD3] text-[#716D69] ">
                       {lang}
                     </li>
                   ))}
@@ -41,7 +41,10 @@ const Achievements = () => {
                 </p>
               </div>
             </div>
-            <div className=" flex  justify-between sm:items-start w-36 sm:w-48 sm:my-7 sm:text-xl text-sm lg:!items-start">
+            <div
+              className=" flex  justify-between lg:w-2/3 ;
+    lg:justify-start sm:items-start w-36 sm:w-48 sm:my-7 sm:text-xl text-sm lg:gap-10"
+            >
               <a href={ele.projectLink} className="cursor-pointer">
                 View Project
               </a>
