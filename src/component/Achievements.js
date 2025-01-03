@@ -24,11 +24,11 @@ const Achievements = () => {
                 </p>
               </div>
               <img
-                className="lg:w-3/6 sm:w-4/5 w-3/4 "
+                className="lg:w-3/6 sm:w-3/4 w-3/4 "
                 src={ele.img}
                 alt="github"
               />
-              <div className="flex flex-col text-xl gap-5 w-2/3 relative top-5 items-start ">
+              <div className="flex flex-col text-xl gap-5  w-5/6 sm:w-2/3 relative top-5 items-start ">
                 <ul className="flex items-start justify-around w6">
                   {ele.tags.map((lang) => (
                     <li className=" rounded text-xs px-3 py-1 mx-1 bg-[#E6DFD3] text-[#716D69]">
@@ -36,7 +36,7 @@ const Achievements = () => {
                     </li>
                   ))}
                 </ul>
-                <p className="text-[#716D69] text-base  lg:max-w-3xl  lg:w-full sm:text-lg lg:text-xl sm:w-full">
+                <p className="text-[#716D69] text-base  lg:max-w-3xl   sm:text-lg lg:text-xl sm:w-full">
                   {ele.text}
                 </p>
               </div>
