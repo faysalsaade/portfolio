@@ -24,4 +24,23 @@ export const data = [
     githubLink: "https://github.com/omarsaade/CryptoFinder",
   },
 ];
+export const url = [
+  {
+    url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1674838683016/df046bf9-26cc-455b-978c-32f133c05b85.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    txt: "An Alternative to Google's Geocoding API that doesn't use a credit card ",
+  },
+  {
+    url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1666381162839/_nkomIV2_.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    txt: "React 18 useEffect behavior ",
+  },
+  {
+    url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1674576121212/2084b4ad-ae8d-45c7-a711-76d162738cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    txt: "Why do we need to add server-side validation? Didn't we add validation in the front-end section?",
+  },
+  {
+    url: "https://cdn.hashnode.com/res/hashnode/image/upload/v1669755451978/yKSWCDLKN.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    txt: "Building Custom Middleware Function in Express JS",
+  },
+];
+
 export const links = ["works", "posts", "about", "contact"];
