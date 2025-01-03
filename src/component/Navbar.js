@@ -26,7 +26,7 @@ const Navbar = () => {
       <div
         id="about"
         className="flex justify-around items-center  z-10
-        top-0 fixed w-full backdrop-blur h-16  "
+        top-0 fixed w-full backdrop-blur h-16 bg-[#FDFAF7]"
       >
         <div className="flex items-center">
           <img
@@ -39,18 +39,22 @@ const Navbar = () => {
 
         {/* second part */}
         <div>
-          <ul className="  items-center gap-10 md:flex hidden font-medium">
+          <ul className="items-center gap-10 md:flex hidden font-medium">
             {links.map((link) => (
-              <>
-                <li
-                  className="text-2xl"
-                  style={{
-                    textTransform: "capitalize",
-                  }}
+              <li
+                key={link}
+                className="text-2xl"
+                style={{
+                  textTransform: "capitalize",
+                }}
+              >
+                <a
+                  href={`#${link}`}
+                  className="relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
                 >
-                  <a href={`#${link}`}>{link}</a>
-                </li>
-              </>
+                  {link}
+                </a>
+              </li>
             ))}
           </ul>
         </div>
