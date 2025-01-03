@@ -4,10 +4,11 @@ import { descrption, url } from "../constants";
 const Posts = () => {
   return (
     <>
-      <div className="grid">
+      <div className="relative top-40">
         <p className=" bg-orange-600 h-7 w-2 right-3 relative"></p>
         <p className="text-2xl">Blogs</p>
-
+      </div>
+      <div className="grid relative top-40 grid-cols-2">
         {url.map((ele) => (
           <>
             <a href="https://omarsaade.hashnode.dev/an-alternative-to-googles-geocoding-api-that-doesnt-use-a-credit-card">
