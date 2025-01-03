@@ -8,16 +8,16 @@ const Navbar = () => {
   const toggle = () => setOpen((open) => !open);
 
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const ClickOutside = (event) => {
       if (asideRef.current && !asideRef.current.contains(event.target)) {
         setOpen(false);
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", ClickOutside);
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", ClickOutside);
     };
   }, []);
 
@@ -80,7 +80,12 @@ const Navbar = () => {
                       textTransform: "capitalize",
                     }}
                   >
-                    <a href={`#${link}`}>{link}</a>
+                    <a
+                      className="relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
+                      href={`#${link}`}
+                    >
+                      {link}
+                    </a>
                   </li>
                 </>
               ))}
