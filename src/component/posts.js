@@ -11,7 +11,7 @@ const Posts = () => {
       <div className="grid relative top-40 grid-cols-2">
         {url.map((ele) => (
           <>
-            <a href="https://omarsaade.hashnode.dev/an-alternative-to-googles-geocoding-api-that-doesnt-use-a-credit-card">
+            <a href={`${ele.tag}`}>
               <img
                 className="right-12 relative h-24 object-cover w-60 rounded-xl"
                 src={`${ele.url}`}
