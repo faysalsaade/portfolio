@@ -7,7 +7,7 @@ const Achievements = () => {
         id="works"
         className="m-auto lg:items-center  relative flex items-start justify-center flex-col  w-2/3  lg:w-3/4 lg:top-36 sm:top-40 top-40"
       >
-        <div className="flex flex-col items-start w-full lg:w-2/3">
+        <div className="flex flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto">
           <div className="flex relative left-3">
             <p className=" bg-orange-600 h-7 w-2 right-3 relative"></p>
             <p className="sm:text-xl font-bold text-base ">
@@ -24,7 +24,7 @@ const Achievements = () => {
                 </p>
               </div>
               <img
-                className="lg:w-3/6 sm:w-3/4 w-3/4 "
+                className="lg:w-96  m-auto sm:w-3/4 w-3/4 "
                 src={ele.img}
                 alt="github"
               />
@@ -43,7 +43,7 @@ const Achievements = () => {
             </div>
             <div
               className=" flex  justify-between lg:w-2/3 ;
-    lg:justify-start sm:items-start w-36 sm:w-48 sm:my-7 sm:text-xl text-sm lg:gap-10"
+    lg:justify-start sm:items-start w-36 sm:w-48 sm:my-7 sm:text-xl text-sm lg:gap-10 xl:w-96  m-auto"
             >
               <a href={ele.projectLink} className="cursor-pointer">
                 View Project
