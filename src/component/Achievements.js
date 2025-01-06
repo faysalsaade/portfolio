@@ -43,7 +43,7 @@ const Achievements = () => {
             </div>
             <div
               className=" flex   lg:w-2/3 ;
-    justify-start w-11/12 gap-10 sm:items-start   sm:my-7 sm:text-xl text-sm lg:gap-10 xl:w-96  m-auto "
+    justify-start w-11/12 gap-10 sm:items-start   sm:my-7 sm:text-xl text-sm lg:gap-10 xl:w-96  m-auto relative xl:right-16"
             >
               <a href={ele.projectLink} className="cursor-pointer">
                 View Project
