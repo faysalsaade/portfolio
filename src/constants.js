@@ -50,5 +50,30 @@ export const url = [
     tagNa: "(hashnode.com)",
   },
 ];
-
+export const SocialMedia = [
+  {
+    name: "Github",
+    url: "d",
+  },
+  {
+    name: "Hashnode",
+    url: "d",
+  },
+  {
+    name: "Email",
+    url: "d",
+  },
+  {
+    name: "Linkedin",
+    url: "d",
+  },
+  {
+    name: "Stack Overflow",
+    url: "d",
+  },
+  {
+    name: "Instagram",
+    url: "d",
+  },
+];
 export const links = ["works", "posts", "about", "contact"];
