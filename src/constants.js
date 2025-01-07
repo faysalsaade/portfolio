@@ -53,27 +53,27 @@ export const url = [
 export const SocialMedia = [
   {
     name: "Github",
-    url: "d",
+    url: "https://github.com/omarsaade",
   },
   {
     name: "Hashnode",
-    url: "d",
+    url: "https://omarsaade.hashnode.dev/",
   },
   {
     name: "Email",
-    url: "d",
+    url: "omarsaadeh11@gmail.com",
   },
   {
     name: "Linkedin",
-    url: "d",
+    url: "https://www.linkedin.com/in/omar-saade-620406122/",
   },
   {
     name: "Stack Overflow",
-    url: "d",
+    url: "https://stackoverflow.com/users/18497493/omar-saade",
   },
   {
     name: "Instagram",
-    url: "d",
+    url: "https://www.instagram.com/omar_saade/?hl=en",
   },
 ];
 export const links = ["works", "posts", "about", "contact"];
