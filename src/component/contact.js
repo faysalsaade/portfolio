@@ -13,9 +13,10 @@ const Contact = () => {
         >
           {SocialMedia.map((ele) => (
             <a
-              className="text-xl flex gap-3 relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] "
+              className="text-xl flex gap-3 relative  text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] "
               target="_blank"
               href={ele.url}
+              rel="noreferrer"
             >
               {ele.name}
               <MdOutlineArrowOutward />
