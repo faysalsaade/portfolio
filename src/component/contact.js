@@ -29,6 +29,21 @@ const Contact = () => {
           © Designed & Built by Mahmoud Haddara, 2025
         </footer>
       </div>
+      <form>
+        <div
+          className="flex flex-col w-[45%] m-auto 
+      bg-white h-[400px] mb-9 rounded-lg bottom-52 relative"
+        >
+          <label className="relative left-[67px] ">Name</label>
+          <input className=" w-[75%] my-0 mx-auto border-2 border-[	#cac3c5] " />
+        </div>
+        <div>
+          <label className="relative left-[67px]">Email</label>
+          <input className="border-2 border-[	#cac3c5]  w-[75%] my-0 mx-auto" />
+        </div>
+        <div></div>
+        <div></div>
+      </form>
     </>
   );
 };
