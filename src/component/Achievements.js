@@ -45,10 +45,16 @@ const Achievements = () => {
               className=" flex   lg:w-2/3 ;
     justify-start w-11/12 gap-10 sm:items-start   sm:my-7 sm:text-xl text-sm lg:gap-10 xl:w-96  m-auto relative xl:right-16"
             >
-              <a href={ele.projectLink} className="cursor-pointer">
+              <a
+                href={ele.projectLink}
+                className="cursor-pointer text-xl before:top-8 gap-3 relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] "
+              >
                 View Project
               </a>
-              <a href={ele.githubLink} className="cursor-pointer">
+              <a
+                href={ele.githubLink}
+                className="cursor-pointer text-xl before:top-8 gap-3 relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] "
+              >
                 Github
               </a>
             </div>
