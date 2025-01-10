@@ -29,21 +29,31 @@ const Contact = () => {
           © Designed & Built by Mahmoud Haddara, 2025
         </footer>
       </div>
-      <form>
-        <div
-          className="flex flex-col w-[45%] m-auto 
-      bg-white h-[400px] mb-9 rounded-lg bottom-52 relative"
-        >
-          <label className="relative left-[67px] ">Name</label>
-          <input className=" w-[75%] my-0 mx-auto border-2 border-[	#cac3c5] " />
-        </div>
-        <div>
-          <label className="relative left-[67px]">Email</label>
-          <input className="border-2 border-[	#cac3c5]  w-[75%] my-0 mx-auto" />
-        </div>
-        <div></div>
-        <div></div>
-      </form>
+      <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-[28%] top-[180px] w-[37vw] z-30 hidden">
+        <form className="flex flex-col h-fit py-2 px-8">
+          <div className="my-5 mx-0">
+            <label className="text-[#252422] font-bold text-s mb-2">Name</label>
+            <input className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]" />
+          </div>
+          <div className="my-5 mx-0">
+            <label className="text-[#252422] font-bold text-s mb-2">
+              Email
+            </label>
+            <input className="border border-[#ccc] rounded-[2px]  py-1 px-2 w-[100%]" />
+          </div>
+          <div className="my-5 mx-0">
+            <label className="text-[#252422] font-bold text-s mb-2">
+              Message
+            </label>
+            <textarea className="bg-[#fff] border border-[#ccc] rounded-[2px] p-[0.2rem] px-[0.4rem] w-full"></textarea>
+          </div>
+          <div className="flex justify-end">
+            <button className="bg-[#d36d45] text-[#bebdbd] cursor-not-allowed px-[17px] p-[12px] text-base  rounded-[5px] border-white border">
+              Send Message{" "}
+            </button>
+          </div>
+        </form>
+      </div>
     </>
   );
 };
