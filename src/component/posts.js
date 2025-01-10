@@ -19,7 +19,7 @@ const Posts = () => {
                 <img
                   className="right-12 relative h-24 md:object-cover w-96  rounded-xl hover:scale-110 "
                   src={`${ele.url}`}
-                  alt=""
+                  alt="Blogs"
                 />
               </a>
               <div className="right-12 relative">

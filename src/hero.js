@@ -26,7 +26,10 @@ const Hero = () => {
         <p>
           {" "}
           My name is Mahmoud Haddara. Currently working at{" "}
-          <a className="text-orange-600" href="https://telepaty.com/">
+          <a
+            className="text-orange-600 cursor-pointer"
+            href="https://telepaty.com/"
+          >
             Telepaty Holding .
           </a>{" "}
         </p>
