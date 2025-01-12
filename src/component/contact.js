@@ -20,6 +20,9 @@ const Contact = () => {
       document.removeEventListener("mousedown", ClickOutside);
     };
   }, []);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
   return (
     <>
       <div className="relative top-48 left-7 sm:left-16 2xl:max-w-2xl xl:m-auto md:max-w-2xl  md:m-auto w-9/12 m-auto  ">
@@ -32,9 +35,10 @@ const Contact = () => {
           {SocialMedia.map((ele) => (
             <a
               className="text-xl flex gap-3 relative  text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] "
+              key={ele.name}
               target="_blank"
-              href={ele.url}
               rel="noreferrer"
+              href={ele.url}
             >
               {ele.name}
               <MdOutlineArrowOutward />
@@ -53,7 +57,13 @@ const Contact = () => {
       </div>
       {open && (
         <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-[28%] top-[180px] w-[37vw] z-30  ">
-          <form className="flex flex-col h-fit py-2 px-8" ref={asideRef}>
+          <form
+            className="flex flex-col h-fit py-2 px-8"
+            onSubmit={(event) => {
+              event.preventDefault();
+            }}
+            ref={asideRef}
+          >
             <div className="my-5 mx-0">
               <label className="text-[#252422] font-bold text-s mb-2">
                 Name
@@ -61,6 +71,10 @@ const Contact = () => {
               <input
                 className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]"
                 type="text"
+                value={name}
+                onChange={(event) => {
+                  setName(event.target.value);
+                }}
               />
             </div>
             <div className="my-5 mx-0">
@@ -70,6 +84,10 @@ const Contact = () => {
               <input
                 className="border border-[#ccc] rounded-[2px]  py-1 px-2 w-[100%]"
                 type="email"
+                value={email}
+                onChange={(event) => {
+                  setEmail(event.target.value);
+                }}
               />
             </div>
             <div className="my-5 mx-0">
