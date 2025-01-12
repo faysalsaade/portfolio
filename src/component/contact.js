@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { SocialMedia } from "../constants";
+import { isItValidEmail } from "valid-utils";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -8,7 +9,6 @@ const Contact = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
-
   const toggle = () => setOpen((open) => !open);
 
   useEffect(() => {
@@ -46,13 +46,20 @@ const Contact = () => {
 
   const checkingEmail = () => {
     const email = emailRef.current.value;
+    const { result, isValid } = isItValidEmail(email);
     if (email === "") {
       setError({
         ...error,
-        email: " please Enter a valid Email",
+        email: "Email must not be empty ",
       });
     } else {
-      setError("");
+      if (isValid) {
+      } else {
+        setError({
+          ...error,
+          email: " please Enter a valid Email",
+        });
+      }
     }
   };
   const checkingMessage = () => {
