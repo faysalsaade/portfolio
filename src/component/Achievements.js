@@ -9,7 +9,7 @@ const Achievements = () => {
       <div className="flex flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto ">
         <div className="flex relative left-3">
           <p className=" bg-orange-600 h-7 w-2 right-3 relative"></p>
-          <p className="sm:text-xl font-bold text-base ">
+          <p className="sm:text-xl font-bold text-lg ">
             Some things I've built
           </p>
         </div>
@@ -23,7 +23,7 @@ const Achievements = () => {
               </p>
             </div>
             <img
-              className="lg:w-96  m-auto sm:w-3/4 w-3/4 "
+              className="lg:w-96  m-auto sm:w-3/4 w-11/12 "
               src={ele.img}
               alt="github"
             />
