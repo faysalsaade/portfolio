@@ -11,7 +11,7 @@ const Posts = () => {
         <p className=" bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Blogs</p>
       </div>
-      <div className="grid md:grid-cols-2 2xl:max-w-2xl xl:m-auto md:max-w-xl  md:m-auto gap-5 md:w-8/12 m-auto w-6/12 grid-cols-1 left-10 relative">
+      <div className="grid md:grid-cols-2 2xl:max-w-2xl xl:m-auto md:max-w-xl  md:m-auto gap-5 md:w-8/12 m-auto w-4/6 grid-cols-1 left-10 relative">
         {url.map((ele) => (
           <article className="relative top-40 " key={ele.txt}>
             <a href={`${ele.tag}`}>

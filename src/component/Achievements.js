@@ -4,7 +4,7 @@ const Achievements = () => {
   return (
     <div
       id="works"
-      className="m-auto lg:items-center  relative flex items-start justify-center flex-col  w-2/3  lg:w-3/4 lg:top-36 sm:top-40 top-40"
+      className="m-auto lg:items-center  relative flex items-start justify-center flex-col w-5/6 lg:w-3/4 lg:top-36 sm:top-40 top-40"
     >
       <div className="flex flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto ">
         <div className="flex relative left-3">
