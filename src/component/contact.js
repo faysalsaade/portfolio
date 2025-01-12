@@ -52,19 +52,25 @@ const Contact = () => {
         </footer>
       </div>
       {open && (
-        <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-[28%] top-[180px] w-[37vw] z-30 ">
+        <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-[28%] top-[180px] w-[37vw] z-30  ">
           <form className="flex flex-col h-fit py-2 px-8" ref={asideRef}>
             <div className="my-5 mx-0">
               <label className="text-[#252422] font-bold text-s mb-2">
                 Name
               </label>
-              <input className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]" />
+              <input
+                className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]"
+                type="text"
+              />
             </div>
             <div className="my-5 mx-0">
-              <label className="text-[#252422] font-bold text-s mb-2">
+              <label className="text-[#252422] font-bold text-s mb-2 ">
                 Email
               </label>
-              <input className="border border-[#ccc] rounded-[2px]  py-1 px-2 w-[100%]" />
+              <input
+                className="border border-[#ccc] rounded-[2px]  py-1 px-2 w-[100%]"
+                type="email"
+              />
             </div>
             <div className="my-5 mx-0">
               <label className="text-[#252422] font-bold text-s mb-2">
@@ -73,7 +79,10 @@ const Contact = () => {
               <textarea className="bg-[#fff] border border-[#ccc] rounded-[2px] p-[0.2rem] px-[0.4rem] w-full"></textarea>
             </div>
             <div className="flex justify-end">
-              <button className="bg-[#d36d45] text-[#bebdbd] cursor-not-allowed px-[17px] p-[12px] text-base  rounded-[5px] border-white border">
+              <button
+                className="bg-[#d36d45] text-[#bebdbd] cursor-not-allowed px-[17px] p-[12px] text-base  rounded-[5px] border-white border"
+                type="submit"
+              >
                 Send Message{" "}
               </button>
             </div>
