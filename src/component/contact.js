@@ -41,7 +41,6 @@ const Contact = () => {
     } else {
       setError("");
     }
-    console.log(name);
   };
 
   const checkingEmail = () => {
@@ -55,9 +54,11 @@ const Contact = () => {
     } else {
       if (isValid) {
       } else {
+        console.log(result);
+
         setError({
           ...error,
-          email: " please Enter a valid Email",
+          email: result,
         });
       }
     }
@@ -134,7 +135,6 @@ const Contact = () => {
               </label>
               <input
                 className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]"
-                type="email"
                 ref={emailRef}
                 onBlur={checkingEmail}
               />
