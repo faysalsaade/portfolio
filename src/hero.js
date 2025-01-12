@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className=" relative flex flex-col mx-auto  w-2/3 lg:left-28 2 xl:left-20 lg:top-32 top-36 2xl:max-w-2xl m-auto">
+    <div className=" relative flex flex-col mx-auto w-5/6 sm:w-2/3 lg:left-28 2 xl:left-20 lg:top-32 top-36 2xl:max-w-2xl m-auto">
       <div className="flex items-start  relative  sm:top-14 lg:top-20 sm:flex-row flex-col-reverse top-0 ">
         <div className="sm:right-0 relative  bottom-7 font-bold">
           <h4 className="lg:text-4xl lg:relative lg:top-4 sm:relative sm:-top-6 sm:text-2xl relative bottom-6 text-2xl  ">
