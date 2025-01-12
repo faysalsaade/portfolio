@@ -31,10 +31,10 @@ const Navbar = () => {
         <div className="flex items-center">
           <img
             src="https://www.howiework.com/static/media/logo.73fe7a7a.png"
-            className="sm:w-16 w-12"
+            className="sm:w-16 w-14"
             alt="logo"
           />
-          <p className="sm:text-3xl sm:font-medium">Mahmoud Haddara</p>
+          <p className="sm:text-3xl sm:font-medium ">Mahmoud Haddara</p>
         </div>
 
         {/* second part */}

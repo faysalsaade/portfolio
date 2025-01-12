@@ -4,20 +4,20 @@ const Hero = () => {
     <div className=" relative flex flex-col mx-auto w-5/6 sm:w-2/3 lg:left-28 2 xl:left-20 lg:top-32 top-36 2xl:max-w-2xl m-auto">
       <div className="flex items-start  relative  sm:top-14 lg:top-20 sm:flex-row flex-col-reverse top-0 ">
         <div className="sm:right-0 relative  bottom-7 font-bold">
-          <h4 className="lg:text-4xl lg:relative lg:top-4 sm:relative sm:-top-6 sm:text-2xl relative bottom-6 text-2xl  ">
+          <h4 className="lg:text-4xl lg:relative lg:top-4 sm:relative sm:-top-6 sm:text-2xl relative bottom-6 text-[25px]  ">
             Hi, I'm Mahmoud
           </h4>
           <p className="relative lg:top-8">
             <span className="hidden sm:block lg:text-2xl font-bold text-white bg-orange-500 px-2 tracking-widest absolute -rotate-12">
               Passionate
             </span>
-            <span className=" -w-0 block relative lg:left-44 lg:text-2xl  lg:top-0 lg:w-64 sm:w-0 sm:left-32 sm:block text-xl">
+            <span className=" -w-0 block relative lg:left-44 lg:text-2xl  lg:top-0 lg:w-64 sm:w-0 sm:left-32 sm:block text-2xl font-light">
               Software Developer
             </span>
           </p>
         </div>
         <img
-          className="sm:w-52  sm: y-12 lg:-right-40 lg:relative relative  w-36 bottom-20 sm:left-20 m-auto sm:m-0 md:mx-7    "
+          className="sm:w-52  sm: y-12 lg:-right-40 lg:relative relative  w-28 bottom-20 sm:left-20 m-auto sm:m-0 md:mx-7    "
           src="https://omarwork-com.onrender.com/static/media/sy.5bbea357f77e8437585e.png"
           alt="Mahmoud Haddara"
         ></img>
