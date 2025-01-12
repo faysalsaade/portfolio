@@ -49,7 +49,7 @@ const Contact = () => {
     if (email === "") {
       setError({
         ...error,
-        email: "Email must not be empty",
+        email: " please Enter a valid Email",
       });
     } else {
       setError("");
@@ -103,7 +103,7 @@ const Contact = () => {
       </div>
 
       {open && (
-        <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-[28%] top-[180px] w-[37vw] z-30">
+        <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-[28%] top-[180px] w-3/5  sm:w-[37vw] z-30">
           <form
             className="flex flex-col h-fit py-2 px-8"
             onSubmit={submit}
