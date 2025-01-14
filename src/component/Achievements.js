@@ -20,7 +20,7 @@ const Achievements = () => {
           key={ele.title}
         >
           <div className="mb-8">
-            <div className="flex items-center justify-start sm:justify-center lg:justify-center w-full my-5">
+            <div className="flex items-center justify-start sm:justify-center lg:justify-center w-full relative left-12 sm:left-0 my-5">
               <p className="sm:my-6  sm:text-xl font-bold text-base ">
                 {ele.title}
               </p>
@@ -58,7 +58,7 @@ const Achievements = () => {
             </a>
             <a
               href={ele.githubLink}
-              className="text-[14px] cursor-pointer  before:top-8 gap-3 relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all sn-300 hover:before:h-[2px] sm:text-[17px]  "
+              className="text-[14px] cursor-pointer  before:top-8 gap-3 relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] sm:text-[17px]  "
             >
               Github
             </a>
