@@ -76,6 +76,7 @@ const Contact = () => {
   };
   const submit = (event) => {
     event.preventDefault();
+    console.log("fff");
   };
   return (
     <>

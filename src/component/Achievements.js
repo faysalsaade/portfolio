@@ -4,7 +4,7 @@ const Achievements = () => {
   return (
     <div
       id="works"
-      className="m-auto lg:items-center  relative flex items-start justify-center flex-col w-5/6 lg:w-3/4 lg:top-48  top-40 mb-12"
+      className="m-auto lg:items-center  relative flex items-start justify-center flex-col w-5/6 lg:w-3/4 lg:top-48  top-40 sm:mb-12"
     >
       <div className="flex relative sm:left-16 lg:left-[-1rem] flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto ">
         <div className="flex  ">
@@ -26,7 +26,7 @@ const Achievements = () => {
               </p>
             </div>
             <img
-              className="lg:w-[60%] m-auto w-5/6 sm:w-[60%]"
+              className="lg:w-[60%] m-auto w-5/6 sm:w-[65%]"
               src={ele.img}
               alt="github"
             />
