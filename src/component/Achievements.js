@@ -26,7 +26,7 @@ const Achievements = () => {
               </p>
             </div>
             <img
-              className="lg:w-[60%] m-auto w-5/6 sm:w-[65%]"
+              className="lg:w-[50%] m-auto w-5/6 sm:w-[65%]"
               src={ele.img}
               alt="github"
             />

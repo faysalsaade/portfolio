@@ -17,7 +17,7 @@ const Hero = () => {
           </p>
         </div>
         <img
-          className="sm:w-48  sm: y-12 lg:-right-40  relative  w-36 bottom-20 md:left-44 m-auto sm:m-0 md:mr-7 lg:ml-16 md:bottom-36"
+          className="sm:w-48  sm y-12 lg:-right-40  relative  w-32 bottom-20 md:left-44 m-auto sm:m-0 md:mr-7 lg:ml-16 md:bottom-36"
           src="https://omarwork-com.onrender.com/static/media/sy.5bbea357f77e8437585e.png"
           alt="Mahmoud Haddara"
         ></img>
