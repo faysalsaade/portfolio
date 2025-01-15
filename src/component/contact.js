@@ -10,6 +10,7 @@ const Contact = () => {
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
+
   const toggle = () => setOpen((open) => !open);
 
   useEffect(() => {
@@ -31,9 +32,10 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+  const name = nameRef.current?.value;
+  const email = emailRef.current?.value;
+  const message = messageRef.current?.value;
   const checkingName = () => {
-    const name = nameRef.current.value;
     if (name === "") {
       setError({
         ...error,
@@ -45,7 +47,6 @@ const Contact = () => {
   };
 
   const checkingEmail = () => {
-    const email = emailRef.current.value;
     const { result, isValid } = isItValidEmail(email);
     if (email === "") {
       setError({
@@ -65,7 +66,6 @@ const Contact = () => {
     }
   };
   const checkingMessage = () => {
-    const message = messageRef.current.value;
     if (message === "") {
       setError({
         ...error,
@@ -159,7 +159,11 @@ const Contact = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className="bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] "
+                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px]${
+                  name?.length > 0 && email?.length > 0 && message?.length > 0
+                    ? "bg-black cursor-pointer text-white"
+                    : ""
+                }`}
                 type="submit"
               >
                 Send Message
