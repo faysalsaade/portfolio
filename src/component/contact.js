@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { SocialMedia } from "../constants";
 import { isItValidEmail } from "valid-utils";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -76,7 +77,11 @@ const Contact = () => {
   };
   const submit = (event) => {
     event.preventDefault();
-    console.log("fff");
+    emailjs.send("service_7cirdt9", "template_upg2ve1", {
+      name: name,
+      email: email,
+      message: message,
+    });
   };
   return (
     <>
