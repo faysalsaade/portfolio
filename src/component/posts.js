@@ -16,7 +16,7 @@ const Posts = () => {
           <article className="relative top-40 " key={ele.txt}>
             <a href={`${ele.tag}`}>
               <img
-                className="right-12 relative h-24 object-cover w-96  rounded-xl hover:scale-110 "
+                className="right-12 relative h-24 object-cover w-96  rounded-xl  transition-all duration-300 ease-in-out transform hover:w-[400px] hover:scale-105 "
                 src={`${ele.url}`}
                 alt="Blogs"
               />
@@ -33,6 +33,7 @@ const Posts = () => {
           </article>
         ))}
       </div>
+
       <div className="relative top-40 left-7 sm:left-16 2xl:max-w-2xl xl:m-auto md:max-w-2xl  md:m-auto w-[80%] m-auto ">
         <p className=" bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Hobbies</p>

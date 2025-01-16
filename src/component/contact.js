@@ -56,8 +56,6 @@ const Contact = () => {
     } else {
       if (isValid) {
       } else {
-        console.log(result);
-
         setError({
           ...error,
           email: result,
@@ -161,7 +159,7 @@ const Contact = () => {
               <button
                 className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px]${
                   name?.length > 0 && email?.length > 0 && message?.length > 0
-                    ? "bg-black cursor-pointer text-white"
+                    ? "bg-black  cursor-pointer text-white"
                     : ""
                 }`}
                 type="submit"
