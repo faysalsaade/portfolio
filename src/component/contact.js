@@ -37,7 +37,6 @@ const Contact = () => {
   const message = messageRef.current?.value;
   const checkingName = () => {
     const name = nameRef.current.value;
-
     if (!name) {
       setError({
         ...error,
@@ -175,9 +174,9 @@ const Contact = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px]${
+                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] ${
                   name?.length > 0 && email?.length > 0 && message?.length > 0
-                    ? "bg-black  cursor-pointer text-white"
+                    ? "bg-orange-600  cursor-pointer text-white"
                     : ""
                 }`}
                 type="submit"

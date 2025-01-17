@@ -4,6 +4,7 @@ import { links } from "../constants.js";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const asideRef = useRef(null);
+  const fifi = useRef(null);
 
   const toggle = () => setOpen((open) => !open);
 
@@ -20,7 +21,19 @@ const Navbar = () => {
       document.removeEventListener("mousedown", ClickOutside);
     };
   }, []);
+  useEffect(() => {
+    const fifa = (eve) => {
+      if (fifi.current && fifi.current.contains(eve.target)) {
+        setOpen(false);
+      }
+    };
 
+    document.addEventListener("mousedown", fifa);
+
+    return () => {
+      document.removeEventListener("mousedown", fifa);
+    };
+  }, []);
   return (
     <>
       <div
@@ -60,12 +73,12 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-
-        <GiHamburgerMenu
-          className=" cursor-pointer md:hidden text-4xl "
-          onClick={toggle}
-        />
-
+        <div ref={fifi}>
+          <GiHamburgerMenu
+            className=" cursor-pointer md:hidden text-4xl "
+            onClick={toggle}
+          />
+        </div>
         {open && (
           <aside
             className="w-2/3 h-screen z-0  top-16 left-0
