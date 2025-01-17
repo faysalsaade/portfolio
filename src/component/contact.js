@@ -36,25 +36,36 @@ const Contact = () => {
   const email = emailRef.current?.value;
   const message = messageRef.current?.value;
   const checkingName = () => {
-    if (name === "") {
+    const name = nameRef.current.value;
+
+    if (!name) {
       setError({
         ...error,
         name: "Name must not be empty",
       });
     } else {
-      setError("");
+      setError({
+        ...error,
+        name: "",
+      });
     }
   };
 
   const checkingEmail = () => {
+    const email = emailRef.current.value;
     const { result, isValid } = isItValidEmail(email);
-    if (email === "") {
+
+    if (!email) {
       setError({
         ...error,
-        email: "Email must not be empty ",
+        email: "Email must not be empty",
       });
     } else {
       if (isValid) {
+        setError({
+          ...error,
+          email: "",
+        });
       } else {
         setError({
           ...error,
@@ -63,16 +74,23 @@ const Contact = () => {
       }
     }
   };
+
   const checkingMessage = () => {
-    if (message === "") {
+    const message = messageRef.current.value;
+
+    if (!message) {
       setError({
         ...error,
         message: "Message must not be empty",
       });
     } else {
-      setError("");
+      setError({
+        ...error,
+        message: "",
+      });
     }
   };
+
   const submit = (event) => {
     event.preventDefault();
     emailjs.send("service_7cirdt9", "template_upg2ve1", {
