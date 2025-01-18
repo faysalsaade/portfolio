@@ -24,22 +24,21 @@ const Navbar = () => {
   useEffect(() => {
     const fifa = (eve) => {
       if (fifi.current && fifi.current.contains(eve.target)) {
-        setOpen(false);
+        setOpen(toggle);
       }
     };
-
     document.addEventListener("mousedown", fifa);
-
     return () => {
       document.removeEventListener("mousedown", fifa);
     };
   }, []);
+
   return (
     <>
       <div
         id="about"
         className="flex  justify-around items-center  z-20
-       fixed w-full backdrop-blur h-16 m-auto"
+       fixed w-full backdrop-blur h-16 m-auto 2xl:w-[120%]"
       >
         <div className="flex items-center">
           <img
@@ -94,6 +93,7 @@ const Navbar = () => {
                     style={{
                       textTransform: "capitalize",
                     }}
+                    key={link}
                   >
                     <a
                       className="relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
