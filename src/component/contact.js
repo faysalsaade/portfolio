@@ -1,11 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import { SocialMedia, SocialMediaLinks } from "../constants";
+import { SocialMediaLinks } from "../constants";
 import { isItValidEmail } from "valid-utils";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const asideRef = useRef(null);
   const nameRef = useRef();
   const emailRef = useRef();
@@ -89,9 +94,13 @@ const Contact = () => {
       });
     }
   };
-
+  const colorization = () => {
+    if (name?.length === "" && email?.length === "" && message?.length === "") {
+    }
+  };
   const submit = (event) => {
     event.preventDefault();
+
     emailjs.send("service_7cirdt9", "template_upg2ve1", {
       name: name,
       email: email,
@@ -147,6 +156,7 @@ const Contact = () => {
                 type="text"
                 ref={nameRef}
                 onBlur={checkingName}
+                onChange={colorization}
               />
               <span>{error.name}</span>
             </div>
@@ -158,6 +168,7 @@ const Contact = () => {
                 className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]"
                 ref={emailRef}
                 onBlur={checkingEmail}
+                onChange={colorization}
               />
               <span>{error.email}</span>
             </div>
@@ -169,16 +180,18 @@ const Contact = () => {
                 className="bg-[#fff] border border-[#ccc] rounded-[2px] p-[0.2rem] px-[0.4rem] w-full"
                 ref={messageRef}
                 onBlur={checkingMessage}
+                onChange={colorization}
               ></textarea>
               <span>{error.message}</span>
             </div>
             <div className="flex justify-end">
               <button
-                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] ${
-                  name?.length > 0 && email?.length > 0 && message?.length > 0
-                    ? "bg-orange-600  cursor-pointer text-white"
-                    : ""
-                }`}
+                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] 
+                  
+          
+                
+                
+                `}
                 type="submit"
               >
                 Send Message
