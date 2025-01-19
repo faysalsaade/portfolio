@@ -11,13 +11,13 @@ const Hero = () => {
             <span className="hidden md:block lg:text-[22px] font-bold text-white bg-[#EB5E28] px-2 tracking-widest absolute -rotate-12 text-[20px] top-[20px] lg:top-[-17px]">
               Passionate
             </span>
-            <span className=" -w-0 block relative lg:left-40 text-[1.7rem]  lg:top-[-20px] lg:w-64 sm:w-0 sm:left-44 sm:block text-2xl font-light w-full  ">
+            <span className=" -w-0 block relative lg:left-40 text-[1.7rem]  lg:top-[-20px] lg:w-64 sm:w-[-1px] md:w-0 sm:left-44 sm:block text-2xl font-light w-full  ">
               Software Developer
             </span>
           </p>
         </div>
         <img
-          className="sm:w-48  sm y-12 lg:-right-40  relative  w-32 bottom-20 md:left-44 m-auto sm:m-0 md:mr-7 lg:ml-16 md:bottom-36"
+          className="sm:w-48  sm:bottom-32 sm:left-12 y-12 lg:-right-40  relative  w-32 bottom-20 md:left-28 m-auto sm:m-0 lg:ml-16 md:bottom-36"
           src="https://omarwork-com.onrender.com/static/media/sy.5bbea357f77e8437585e.png"
           alt="Mahmoud Haddara"
         ></img>

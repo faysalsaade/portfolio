@@ -8,7 +8,7 @@ const Achievements = () => {
     >
       <div className="flex relative sm:left-16 lg:left-[-1rem] flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto ">
         <div className="flex  ">
-          <p className=" bg-orange-600 h-7 w-2 right-3 relative"></p>
+          <p className=" bg-orange-600 h-7 w-2 right-[0.60rem] relative"></p>
           <p className="sm:text-xl font-bold text-lg ">
             Some things I've built
           </p>
