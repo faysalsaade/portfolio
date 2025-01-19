@@ -5,13 +5,13 @@ const Posts = () => {
   return (
     <>
       <div
-        className="relative top-40 left-7 sm:left-16 2xl:max-w-[44rem] xl:m-auto md:max-w-2xl  md:m-auto w-[80%] m-auto "
+        className="relative top-40 left-3 sm:left-16 lg:left-7  2xl:max-w-[44rem] xl:m-auto md:max-w-[42rem]  md:m-auto w-[80%] m-auto "
         id="posts"
       >
         <p className=" bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-10">Blogs</p>
       </div>
-      <div className="grid md:grid-cols-2 2xl:max-w-2xl xl:m-auto md:max-w-[38rem]  md:m-auto gap-5 md:w-8/12 m-auto sm:w-2/4 w-[79%] grid-cols-1 left-10 relative">
+      <div className="grid md:grid-cols-2 2xl:max-w-2xl xl:m-auto md:max-w-[37rem] sm:max-w-[32rem]  md:m-auto gap-5 md:w-8/12 m-auto sm:w-2/4 w-[79%] grid-cols-1 left-10 sm:left-9 relative">
         {url.map((ele) => (
           <article className="relative top-40 " key={ele.txt}>
             <a href={`${ele.tag}`}>
@@ -34,7 +34,7 @@ const Posts = () => {
         ))}
       </div>
 
-      <div className="relative top-40 left-7 sm:left-16 2xl:max-w-2xl xl:m-auto md:max-w-2xl  md:m-auto w-[80%] m-auto ">
+      <div className="relative top-40 left-3 sm:left-16 2xl:max-w-2xl xl:m-auto md:max-w-[47rem]  md:m-auto w-[78%] m-auto ">
         <p className=" bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Hobbies</p>
         <p className="font-normal relative right-4">

@@ -7,7 +7,7 @@ const Achievements = () => {
       className="m-auto lg:items-center  relative flex items-start justify-center flex-col w-5/6 lg:w-3/4 lg:top-48  top-40 sm:mb-12"
     >
       <div className="flex relative sm:left-16 lg:left-[-1rem] flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto ">
-        <div className="flex  ">
+        <div className="flex left-1 sm:left-9 relative">
           <p className=" bg-orange-600 h-7 w-2 right-[0.60rem] relative"></p>
           <p className="sm:text-xl font-bold text-lg ">
             Some things I've built
@@ -20,8 +20,8 @@ const Achievements = () => {
           key={ele.title}
         >
           <div className="mb-8">
-            <div className="flex items-center justify-start sm:justify-center lg:justify-center w-full relative left-12 sm:left-0 my-5">
-              <p className="sm:my-6  sm:text-xl font-bold text-base ">
+            <div className="flex items-center justify-start sm:justify-center lg:justify-center w-full relative left-0 sm:left-0 mt-5 mb-9">
+              <p className="sm:y-6  sm:text-xl font-bold text-base ">
                 {ele.title}
               </p>
             </div>
@@ -48,7 +48,7 @@ const Achievements = () => {
           </div>
           <div
             className=" flex lg:left-0  xl:left-[-4rem]  sm:left-16 
-    justify-start w-full gap-10 sm:items-start   sm:mb-7 sm:mt-14 sm:text-xl text-sm lg:gap-10 xl:w-[33rem]  m-auto relative xl:right-16 z-10 lg:w-[79%] 2xl:w-[23rem]"
+    justify-start w-full gap-10 sm:items-start   sm:mb-7 sm:mt-14 sm:text-xl text-sm lg:gap-20 xl:w-[33rem]  m-auto relative xl:right-16 z-10 lg:w-[79%] 2xl:w-[23rem]"
           >
             <a
               href={ele.projectLink}

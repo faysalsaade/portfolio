@@ -50,7 +50,7 @@ export const url = [
     tagNa: "(hashnode.com)",
   },
 ];
-export const SocialMedia = [
+export const SocialMediaLinks = [
   {
     name: "Github",
     url: "https://github.com/omarsaade",

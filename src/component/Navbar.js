@@ -40,14 +40,13 @@ const Navbar = () => {
             className="sm:w-16 w-14"
             alt="logo"
           />
-          <p className="text-[18px] sm:text-2xl sm:font-medium ">
+          <p className="text-[18px] sm:text-2xl sm:font-semibold ">
             Mahmoud Haddara
           </p>
         </div>
 
-        {/* second part */}
         <div>
-          <ul className="items-center gap-10 md:flex hidden font-medium">
+          <ul className="items-center gap-10 md:flex hidden font-normal">
             {links.map((link) => (
               <li
                 key={link}
@@ -66,37 +65,39 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
         <div ref={fifi}>
           <GiHamburgerMenu
             className="cursor-pointer md:hidden text-4xl"
             onClick={toggle}
           />
         </div>
-        {open && (
-          <aside
-            className="w-2/3 h-screen z-0 top-16 left-0 bg-white md:hidden fixed flex flex-col items-center justify-center shadow-2xl"
-            ref={asideRef}
-          >
-            <ul>
-              {links.map((link) => (
-                <li
-                  className="text-2xl py-6"
-                  style={{
-                    textTransform: "capitalize",
-                  }}
-                  key={link}
+
+        <aside
+          className={`w-2/3 h-screen z-0 top-16 left-0 bg-white md:hidden fixed flex flex-col items-center justify-center shadow-2xl transform transition-transform duration-500 ease-in-out ${
+            open ? "translate-x-0" : "-translate-x-full"
+          }`}
+          ref={asideRef}
+        >
+          <ul>
+            {links.map((link) => (
+              <li
+                className="text-2xl py-6"
+                style={{
+                  textTransform: "capitalize",
+                }}
+                key={link}
+              >
+                <a
+                  className="relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
+                  href={`#${link}`}
                 >
-                  <a
-                    className="relative inline-block text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
-                    href={`#${link}`}
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </aside>
-        )}
+                  {link}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </aside>
       </div>
     </>
   );
