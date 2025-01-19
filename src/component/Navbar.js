@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
 
         <aside
-          className={`w-2/3 h-screen z-0 top-16 left-0 bg-white md:hidden fixed flex flex-col items-center justify-center shadow-2xl transform transition-transform duration-650 ease-in-out ${
+          className={`w-[70%] h-screen z-0 top-16 left-0 bg-white md:hidden fixed flex flex-col items-center justify-center shadow-2xl transform transition-transform duration-650 ease-in-out ${
             open ? "translate-x-0" : "-translate-x-full"
           }`}
           ref={asideRef}
