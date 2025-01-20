@@ -95,8 +95,24 @@ const Contact = () => {
     }
   };
   const colorization = (e) => {
-    setInput(e.target.value);
-    console.log(e.target.value);
+    if (e.target.id === "name") {
+      setInput({
+        ...input,
+        name: e.target.value,
+      });
+    }
+    if (e.target.id === "email") {
+      setInput({
+        ...input,
+        email: e.target.value,
+      });
+    }
+    if (e.target.id === "message") {
+      setInput({
+        ...input,
+        message: e.target.value,
+      });
+    }
   };
   const submit = (event) => {
     event.preventDefault();
@@ -153,6 +169,7 @@ const Contact = () => {
               </label>
               <input
                 className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]"
+                id="name"
                 type="text"
                 ref={nameRef}
                 onBlur={checkingName}
@@ -167,6 +184,7 @@ const Contact = () => {
               </label>
               <input
                 className="border border-[#ccc] rounded-[2px] py-1 px-2 w-[100%]"
+                id="email"
                 ref={emailRef}
                 onBlur={checkingEmail}
                 onChange={colorization}
@@ -180,6 +198,7 @@ const Contact = () => {
               </label>
               <textarea
                 className="bg-[#fff] border border-[#ccc] rounded-[2px] p-[0.2rem] px-[0.4rem] w-full"
+                id="message"
                 ref={messageRef}
                 onBlur={checkingMessage}
                 onChange={colorization}
@@ -189,9 +208,16 @@ const Contact = () => {
             </div>
             <div className="flex justify-end">
               <button
-                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px]`}
                 type="submit"
+                className={`bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] ${
+                  input.name.length > 0 &&
+                  input.email.length > 0 &&
+                  input.message.length > 0 &&
+                  isItValidEmail(email).isValid === true &&
+                  " bg-orange-600 text-white cursor-pointer"
+                }`}
               >
+                {" "}
                 Send Message
               </button>
             </div>
