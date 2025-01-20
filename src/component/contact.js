@@ -94,9 +94,9 @@ const Contact = () => {
       });
     }
   };
-  const colorization = () => {
-    if (name?.length === "" && email?.length === "" && message?.length === "") {
-    }
+  const colorization = (e) => {
+    setInput(e.target.value);
+    console.log(e.target.value);
   };
   const submit = (event) => {
     event.preventDefault();
@@ -157,6 +157,7 @@ const Contact = () => {
                 ref={nameRef}
                 onBlur={checkingName}
                 onChange={colorization}
+                value={input.name}
               />
               <span>{error.name}</span>
             </div>
@@ -169,6 +170,7 @@ const Contact = () => {
                 ref={emailRef}
                 onBlur={checkingEmail}
                 onChange={colorization}
+                value={input.email}
               />
               <span>{error.email}</span>
             </div>
@@ -181,17 +183,13 @@ const Contact = () => {
                 ref={messageRef}
                 onBlur={checkingMessage}
                 onChange={colorization}
+                value={input.message}
               ></textarea>
               <span>{error.message}</span>
             </div>
             <div className="flex justify-end">
               <button
-                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] 
-                  
-          
-                
-                
-                `}
+                className={` bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px]`}
                 type="submit"
               >
                 Send Message
