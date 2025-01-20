@@ -117,11 +117,21 @@ const Contact = () => {
   const submit = (event) => {
     event.preventDefault();
 
-    emailjs.send("service_7cirdt9", "template_upg2ve1", {
-      name: name,
-      email: email,
-      message: message,
-    });
+    if (
+      input.name === "" ||
+      input.email === "" ||
+      input.message === "" ||
+      isItValidEmail(email).isValid === false
+    ) {
+      return;
+    } else {
+      emailjs.send("service_7cirdt9", "template_upg2ve1", {
+        name: name,
+        email: email,
+        message: message,
+      });
+    }
+    console.log(isItValidEmail(email).isValid);
   };
   return (
     <>
