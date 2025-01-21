@@ -5,17 +5,17 @@ import { links } from "../constants.js";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const asideRef = useRef(null);
-  const fifi = useRef(null);
+  const HamburgerMenu = useRef(null);
 
-  const toggle = () => setOpen((prevOpen) => !prevOpen);
+  const toggle = () => setOpen((open) => !open);
 
   useEffect(() => {
     const ClickOutside = (event) => {
       if (
         asideRef.current &&
         !asideRef.current.contains(event.target) &&
-        fifi.current &&
-        !fifi.current.contains(event.target)
+        HamburgerMenu.current &&
+        HamburgerMenu.current.contains(event.target)
       ) {
         setOpen(false);
       }
@@ -66,7 +66,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div ref={fifi}>
+        <div ref={HamburgerMenu}>
           <GiHamburgerMenu
             className="cursor-pointer md:hidden text-4xl"
             onClick={toggle}

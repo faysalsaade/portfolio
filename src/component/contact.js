@@ -11,7 +11,7 @@ const Contact = () => {
     email: "",
     message: "",
   });
-  const asideRef = useRef(null);
+  const form = useRef(null);
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -20,7 +20,7 @@ const Contact = () => {
 
   useEffect(() => {
     const ClickOutside = (event) => {
-      if (asideRef.current && !asideRef.current.contains(event.target)) {
+      if (form.current && !form.current.contains(event.target)) {
         setOpen(false);
       }
     };
@@ -131,7 +131,6 @@ const Contact = () => {
         message: message,
       });
     }
-    console.log(isItValidEmail(email).isValid);
   };
   return (
     <>
@@ -171,7 +170,7 @@ const Contact = () => {
           <form
             className="flex flex-col h-fit py-2 px-8"
             onSubmit={submit}
-            ref={asideRef}
+            ref={form}
           >
             <div className="my-5 mx-0">
               <label className="text-[#252422] font-bold text-s mb-2">
