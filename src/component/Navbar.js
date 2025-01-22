@@ -32,7 +32,7 @@ const Navbar = () => {
     <>
       <div
         id="about"
-        className="flex justify-around items-center z-20 fixed lg:w-[125%] w-full backdrop-blur h-16 m-auto 2xl:w-[105%] 2xl:justify-center 2xl:gap-32"
+        className="flex justify-around items-center z-20 fixed lg:w-[114%] xl:w-[104%] w-full backdrop-blur h-16 m-auto 2xl:w-[104%] md:justify-center md:gap-12 lg:gap-28 "
       >
         <div className="flex items-center">
           <img
@@ -40,17 +40,17 @@ const Navbar = () => {
             className="sm:w-16 w-14"
             alt="logo"
           />
-          <p className="text-[18px] sm:text-2xl sm:font-semibold ">
+          <p className="text-[18px] sm:text-[18px] sm:font-semibold ">
             Mahmoud Haddara
           </p>
         </div>
 
         <div>
-          <ul className="items-center gap-10 md:flex hidden font-normal">
+          <ul className="items-center gap-[1.25rem] md:flex hidden font-normal">
             {links.map((link) => (
               <li
                 key={link}
-                className="text-2xl"
+                className="text-[20px]"
                 style={{
                   textTransform: "capitalize",
                 }}

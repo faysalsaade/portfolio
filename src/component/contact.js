@@ -3,6 +3,9 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import { SocialMediaLinks } from "../constants";
 import { isItValidEmail } from "valid-utils";
 import emailjs from "@emailjs/browser";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SimpleSlider from "./Slider";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -138,19 +141,18 @@ const Contact = () => {
         <p className="bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Get in touch</p>
         <div
-          className="flex flex-col gap-4 items-start right-4 relative"
+          className="flex flex-row gap-6 items-start right-4 relative"
           id="contact"
         >
           {SocialMediaLinks.map((ele) => (
             <a
-              className="text-xl flex gap-3 relative text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
+              className="text-xl flex  gap-3 relative text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
               key={ele.name}
               target="_blank"
               rel="noreferrer"
               href={ele.url}
             >
               {ele.name}
-              <MdOutlineArrowOutward />
             </a>
           ))}
           <button
@@ -165,6 +167,7 @@ const Contact = () => {
         </footer>
       </div>
 
+      <SimpleSlider />
       {open && (
         <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-4 w-5/6 sm:left-[28%]  top-[180px]  sm:w-[37vw] z-30">
           <form

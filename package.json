@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@shadcn/ui": "^0.0.4",
     "cra-template": "1.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
     "react-scripts": "^5.0.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
     "valid-utils": "^1.0.1"
   },
   "scripts": {
