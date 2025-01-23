@@ -5,7 +5,7 @@ const Posts = () => {
   return (
     <>
       <div
-        className="relative top-40 left-3 sm:left-16 lg:left-7  2xl:max-w-[44rem] xl:m-auto md:max-w-[42rem]  md:m-auto w-[80%] m-auto "
+        className="relative top-40 left-3 sm:left-16 lg:left-7  2xl:max-w-[44rem] xl:m-auto md:max-w-[46%]  md:m-auto w-[80%] m-auto "
         id="posts"
       >
         <p className=" bg-orange-600 h-7 w-2 right-5 relative top-8"></p>

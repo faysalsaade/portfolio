@@ -1,15 +1,14 @@
 import Hero from "./hero";
 import Navbar from "./component/Navbar";
-import Achievements from "./component/Achievements";
 import Posts from "./component/posts";
 import Contact from "./component/contact";
-
+import SimpleSlider from "./component/Slider";
 function App() {
   return (
     <div id="about">
       <Navbar />
       <Hero />
-      <Achievements />
+      <SimpleSlider />
       <Posts />
       <Contact />
     </div>

@@ -5,7 +5,6 @@ import { isItValidEmail } from "valid-utils";
 import emailjs from "@emailjs/browser";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SimpleSlider from "./Slider";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -146,7 +145,7 @@ const Contact = () => {
         >
           {SocialMediaLinks.map((ele) => (
             <a
-              className="text-xl flex  gap-3 relative text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
+              className="text-[18px] flex  gap-3 relative text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
               key={ele.name}
               target="_blank"
               rel="noreferrer"
@@ -156,7 +155,7 @@ const Contact = () => {
             </a>
           ))}
           <button
-            className="py-2 w-40 bg-orange-600 text-white rounded-md top-8 relative font-normal mb-[-55px] hover:bg-[#c34e1f]"
+            className="py-2 w-40 bg-orange-600 text-white rounded-md relative font-normal mb-[-55px] hover:bg-[#c34e1f] top-[85px]"
             onClick={toggle}
           >
             Send Message
@@ -167,7 +166,6 @@ const Contact = () => {
         </footer>
       </div>
 
-      <SimpleSlider />
       {open && (
         <div className="backdrop-blur-sm bg-[hsla(0,0%,100%,.95)] rounded-2xl shadow-md fixed left-4 w-5/6 sm:left-[28%]  top-[180px]  sm:w-[37vw] z-30">
           <form
@@ -221,7 +219,7 @@ const Contact = () => {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className={`bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px] ${
+                className={`bg-[#d36d45] text-[#bebdbd] cursor-not-allowed    sm:px-[17px] p-[12px] sm:text-base rounded-[5px] border-white border text-[14px]  ${
                   input.name.length > 0 &&
                   input.email.length > 0 &&
                   input.message.length > 0 &&
