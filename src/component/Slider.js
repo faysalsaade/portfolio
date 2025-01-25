@@ -22,10 +22,10 @@ function SimpleSlider() {
         <Slider {...settings}>
           {data.map((ele) => (
             <div
-              className="flex flex-col top-[300px] m-auto  mt-[250px] lg:w-[82%]  2xl:max-w-full"
+              className=" flex !flex flex-col top-[300px] m-auto  mt-[250px] lg:w-[82%]  2xl:max-w-full"
               key={ele.title}
             >
-              <div className="mb-8 m-auto max-w-full 2xl:max-w-[full]">
+              <div className="mb-8 m-auto max-w-full 2xl:max-w-[40%]">
                 <div className="flex items-center justify-start sm:justify-center lg:justify-center  w-full relative left-0 sm:left-0 mt-5 mb-9 mx-auto max-w-[85%]">
                   <p className="sm:y-6  sm:text-xl font-bold text-base ">
                     {ele.title}
