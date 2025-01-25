@@ -136,7 +136,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="relative top-48 left-3 sm:left-16 2xl:max-w-2xl xl:m-auto md:max-w-[68%] md:m-auto w-[78%] m-auto ml-[20%]">
+      <div className="relative top-48 left-3 sm:left-16 2xl:max-w-[40%] 3xl:max-w-[27%] xl:max-w-[68%] xl:m-auto lg:max-w-[68%] 5xl:max-w-[16%] 4xl:max-w-[21%]: md:m-auto w-[78%] m-auto ml-[20%]">
         <p className="bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Get in touch</p>
         <div
