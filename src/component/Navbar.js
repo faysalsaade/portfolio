@@ -32,7 +32,7 @@ const Navbar = () => {
     <>
       <div
         id="about"
-        className="flex justify-around items-center z-20 fixed lg:w-[115%] xl:w-[103%] w-full backdrop-blur h-16 m-auto 2xl:w-[104%] md:justify-center md:gap-12 lg:gap-28 "
+        className="flex justify-around items-center z-20 fixed lg:w-[108%] xl:w-[97%] 2xl:w-[103%] w-full backdrop-blur h-16 m-auto 3xl:w-[102%] md:justify-center md:gap-12 lg:gap-28 "
       >
         <div className="flex items-center">
           <img

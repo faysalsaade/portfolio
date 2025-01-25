@@ -6,7 +6,7 @@ const Achievements = () => {
       id="works"
       className="m-auto lg:items-center  relative flex items-start justify-center flex-col w-5/6 lg:w-3/4 lg:top-48  top-40 sm:mb-12"
     >
-      <div className="flex relative sm:left-16 lg:left-[-1rem] flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto ">
+      <div className="flex relative sm:left-16 lg:left-[-1rem] flex-col items-start w-full lg:w-2/3 2xl:max-w-lg 2xl:m-auto 5xl:max-w-[17%]">
         <div className="flex left-1 sm:left-9 relative">
           <p className=" bg-orange-600 h-7 w-2 right-[0.60rem] relative"></p>
           <p className="sm:text-xl font-bold text-lg ">
