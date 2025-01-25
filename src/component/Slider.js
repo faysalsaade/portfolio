@@ -13,7 +13,7 @@ function SimpleSlider() {
   return (
     <div id="works" className="m-auto relative">
       <div className="slider-container">
-        <div className="flex left-1 sm:left-9 relative  m-auto w-[85%] lg:w-[53%] 2xl:max-w-[13%]    justify-start top-52">
+        <div className="flex left-1 sm:left-9 relative  m-auto w-[85%] lg:w-[60%] 2xl:max-w-[13%]    justify-start top-52">
           <p className=" bg-orange-600 h-7 w-2 right-[0.60rem] relative"></p>
           <p className="sm:text-xl font-bold text-lg ">
             Some things I've built
@@ -36,7 +36,7 @@ function SimpleSlider() {
                   src={ele.img}
                   alt="github"
                 />
-                <div className="flex flex-col sm:text-xl sm:gap-5  w-[80%] sm:w-[48%] 2xl:w-[31%]   relative top-5 items-start m-auto">
+                <div className="flex flex-col sm:text-xl sm:gap-5  w-[80%] sm:w-[48%] lg:w-[56%] 2xl:w-[31%]   relative top-5 items-start m-auto">
                   <ul className="flex items-start justify-around w-6 my-4">
                     {ele.tags.map((lang) => (
                       <li
@@ -54,7 +54,7 @@ function SimpleSlider() {
               </div>
               <div
                 className=" flex  max-w-[83%]   sm:w-[48%]
-    justify-start w-full gap-10 sm:items-start   sm:mb-7 sm:mt-14 sm:text-xl text-sm lg:gap-20 xl:w-[38%]  m-auto relative xl:right-16 z-10 lg:w-[48%] 2xl:w-[23rem]"
+    justify-start w-full gap-10 sm:items-start   sm:mb-7 sm:mt-6 sm:text-xl text-sm lg:gap-20 xl:w-[46%]  m-auto relative xl:right-16 z-10 lg:w-[48%] 2xl:w-[23rem]"
               >
                 <a
                   href={ele.projectLink}
