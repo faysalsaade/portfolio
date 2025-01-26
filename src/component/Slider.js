@@ -53,8 +53,8 @@ function SimpleSlider() {
                 </div>
               </div>
               <div
-                className=" flex  max-w-[83%]   sm:w-[48%]
-    justify-start w-full gap-10 sm:items-start   sm:mb-7 sm:mt-6 sm:text-xl text-sm lg:gap-20 xl:w-[46%]  m-auto relative xl:right-16 z-10 lg:w-[48%] 2xl:w-[24%] 3xl:w-[17%] 4xl:w-[11%] 6xl:w-[8%] "
+                className=" flex  max-w-[83%]   sm:w-[60%]
+    justify-start w-full gap-10 sm:items-start   sm:mb-7 sm:mt-6 sm:text-xl text-sm lg:gap-20 xl:w-[46%]  m-auto relative xl:right-16 z-10 lg:w-[56%] 2xl:w-[24%] 3xl:w-[17%] 4xl:w-[11%] 6xl:w-[8%] "
               >
                 <a
                   href={ele.projectLink}
