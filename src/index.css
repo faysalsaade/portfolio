@@ -13,9 +13,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fcf7f1;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+@media only screen and (max-width: 500px) {
+  .phone {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }

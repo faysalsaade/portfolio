@@ -140,7 +140,7 @@ const Contact = () => {
         <p className="bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Get in touch</p>
         <div
-          className="lg:flex lg:flex-row grid grid-cols-2 gap-6 lg:items-start right-4 relative 2xl:w-[112%] top-5"
+          className=" lg:flex lg:flex-row grid grid-cols-2 phone gap-6 lg:items-start right-4 relative 2xl:w-[112%] top-5"
           id="contact"
         >
           {SocialMediaLinks.map((ele) => (
