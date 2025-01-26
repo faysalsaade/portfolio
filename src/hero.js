@@ -4,14 +4,14 @@ const Hero = () => {
     <div className=" relative flex flex-col mx-auto w-5/6 sm:w-[60%] lg:left-[3%] 2 xl:left-8 lg:top-44 top-36 3xl:max-w-2xl 2xl:max-w-[37%] m-auto 6xl:max-w-[14%] lg:max-w-[60%] ">
       <div className="flex items-start  relative  sm:top-14 lg:top-20 sm:flex-row flex-col-reverse top-0 ">
         <div className="sm:right-0 relative  bottom-14 font-bold">
-          <h4 className="lg:text-[35px] lg:relative sm:relative sm:-top-6 sm:text-2xl relative bottom-4 text-[25px] sm:text-[25px] md:text-[29px] lg:top-[-8px] font-semibold">
+          <h4 className="lg:text-[35px] lg:relative sm:relative sm:-top-6 sm:text-2xl relative bottom-4 text-[25px] sm:text-[23px] md:text-[29px] lg:top-[-8px] font-semibold">
             Hi, I'm Mahmoud
           </h4>
           <p className="relative lg:top-8 sm:right-[178px] md:right-0">
             <span className="hidden md:block lg:text-[22px] font-bold text-white bg-[#EB5E28] px-2 tracking-widest absolute -rotate-12 text-[20px] top-[20px] lg:top-[-17px]">
               Passionate
             </span>
-            <span className=" -w-0 block relative lg:left-40 text-[1.7rem]  lg:top-[-20px] lg:w-64 sm:w-[-1px] md:w-0 sm:left-44 sm:block text-2xl font-light w-full  ">
+            <span className=" -w-0 block relative lg:left-40 text-[1.7rem] sm:text-[23px]  lg:top-[-20px] lg:w-64 sm:w-[-1px] md:w-0 sm:left-44 sm:block text-2xl font-light w-full  ">
               Software Developer
             </span>
           </p>
