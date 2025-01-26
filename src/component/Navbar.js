@@ -11,18 +11,13 @@ const Navbar = () => {
 
   useEffect(() => {
     const ClickOutside = (event) => {
-      console.log(asideRef.current);
-      console.log(!asideRef.current.contains(event.target));
-      console.log(HamburgerMenu.current);
-      console.log(HamburgerMenu.current.contains(event.target));
-
       if (
         asideRef.current &&
         !asideRef.current.contains(event.target) &&
-        HamburgerMenu.current &&
-        HamburgerMenu.current.contains(event.target)
+        (!HamburgerMenu.current ||
+          !HamburgerMenu.current.contains(event.target))
       ) {
-        setOpen(true);
+        setOpen(false);
       }
     };
     document.addEventListener("mousedown", ClickOutside);
