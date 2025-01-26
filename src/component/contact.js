@@ -136,16 +136,16 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="relative top-48 left-3 sm:left-16 2xl:max-w-[39%] 3xl:max-w-[27%] xl:max-w-[68%] xl:m-auto lg:max-w-[68%] 5xl:max-w-[16%] 4xl:max-w-[21%]: md:m-auto w-[78%] m-auto ml-[20%]">
+      <div className="relative top-48   xl:max-w-[63%] xl:ml-[23%]  2xl:max-w-[39%] 3xl:max-w-[27%] lg:max-w-[68%] 5xl:max-w-[16%] 4xl:max-w-[21%]:  w-[74%] m-auto sm:ml-[20%] md:ml-[23%] 2xl:ml-[33.8%] 3xl:ml-[38.8%] 4xl:ml-[43.2%] 5xl:ml-[43.5%]">
         <p className="bg-orange-600 h-7 w-2 right-5 relative top-8"></p>
         <p className="text-2xl mb-6">Get in touch</p>
         <div
-          className="flex flex-row gap-6 items-start right-4 relative 2xl:w-[112%]"
+          className="lg:flex lg:flex-row grid grid-cols-2 gap-6 lg:items-start right-4 relative 2xl:w-[112%] top-5"
           id="contact"
         >
           {SocialMediaLinks.map((ele) => (
             <a
-              className="text-[18px] flex  gap-3 relative text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px]"
+              className="text-[18px] flex  gap-3 relative text-black before:content-[''] before:absolute before:left-1 before:bottom-0 before:w-0 before:h-0 before:bg-black transition-all duration-300 hover:before:w-full before:transition-all before:duration-300 hover:before:h-[2px] w-max"
               key={ele.name}
               target="_blank"
               rel="noreferrer"
@@ -155,13 +155,13 @@ const Contact = () => {
             </a>
           ))}
           <button
-            className="py-2 w-40 bg-orange-600 text-white rounded-md relative font-normal mb-[-55px] hover:bg-[#c34e1f] top-[85px]"
+            className="py-2 w-40 bg-orange-600 text-white rounded-md relative font-normal lg:mb-[-55px] hover:bg-[#c34e1f] sm:top-[20px] ml-[40%] lg:top-[85px] lg:ml-[-2%]"
             onClick={toggle}
           >
             Send Message
           </button>
         </div>
-        <footer className="top-40 relative w-[80%] lg:w-[54%] m-auto mb-[450px] text-[#43413E] right-10">
+        <footer className="top-24 sm:top-40 relative w-full sm:w-[80%] lg:w-[54%] m-auto mb-[450px] text-[#43413E] sm:right-10">
           © Designed & Built by Mahmoud Haddara, 2025
         </footer>
       </div>
