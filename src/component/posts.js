@@ -33,7 +33,6 @@ const Posts = () => {
           </article>
         ))}
       </div>
-
       <div
         className="relative top-40 left-3 lg:left-6 xl:left-[2%] 2xl:left-[3%] 3xl:left-[2.5%]
       4xl:left-[1.5%] xl:max-w-[63%] 2xl:max-w-[39%]  3xl:max-w-[27%] 4xl:max-w-[21%] 5xl:max-w-[16%] xl:m-auto lg:max-w-[68%]   md:m-auto w-[80%] sm:w-[62%] md:w-[58%] m-auto "
